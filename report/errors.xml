@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <svrl:schematron-output>
-  <svrl:failed-assert id="element-not-empty" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference/cbc:ID" test="false()" role="ERROR">
-    <svrl:text>
-			Os campos devem ser preenchidos</svrl:text>
+  <svrl:failed-assert id="BR-OPT-00201-0052" location="/pin:PriorInformationNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[1]/efac:TouchPoint/cac:PartyIdentification/cbc:ID" test="matches(normalize-space(.),'^TPO-\d{4}$')" role="ERROR">
+    <svrl:text>OPT-201-Organization-TouchPoint deve corresponder ao seguinte padrão: TouchPointID</svrl:text>
   </svrl:failed-assert>
 </svrl:schematron-output>
