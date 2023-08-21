@@ -22,9 +22,14 @@
                 </cac:PartyName>
                 <cac:PostalAddress>
                   <cbc:StreetName>Praça</cbc:StreetName>
+                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
+                  <cbc:Department>Sao Paulo</cbc:Department>
                   <cbc:CityName>lisboa</cbc:CityName>
                   <cbc:PostalZone>7670-130</cbc:PostalZone>
                   <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
+                  <cac:AddressLine>
+                    <cbc:Line>22</cbc:Line>
+                  </cac:AddressLine>
                   <cac:Country>
                     <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
                   </cac:Country>
@@ -52,9 +57,14 @@
                 </cac:PartyName>
                 <cac:PostalAddress>
                   <cbc:StreetName>2, rue de l'Europe</cbc:StreetName>
+                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
+                  <cbc:Department>Sao Paulo</cbc:Department>
                   <cbc:CityName>SmallCity</cbc:CityName>
                   <cbc:PostalZone>2345</cbc:PostalZone>
                   <cbc:CountrySubentityCode listName="nuts">AL011</cbc:CountrySubentityCode>
+                  <cac:AddressLine>
+                    <cbc:Line>22</cbc:Line>
+                  </cac:AddressLine>
                   <cac:Country>
                     <cbc:IdentificationCode listName="country">1A0</cbc:IdentificationCode>
                   </cac:Country>
@@ -80,9 +90,14 @@
                 </cac:PartyName>
                 <cac:PostalAddress>
                   <cbc:StreetName>Praça</cbc:StreetName>
+                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
+                  <cbc:Department>Sao Paulo</cbc:Department>
                   <cbc:CityName>lisboa</cbc:CityName>
                   <cbc:PostalZone>7670-130</cbc:PostalZone>
                   <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
+                  <cac:AddressLine>
+                    <cbc:Line>22</cbc:Line>
+                  </cac:AddressLine>
                   <cac:Country>
                     <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
                   </cac:Country>
@@ -110,9 +125,9 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">d4729981-0569-41d9-9f56-7668b465b1e8</cbc:ID>
+  <cbc:ID schemeName="notice-id">f4069d2d-0aa3-4a93-85fa-6f3ad3a645ea</cbc:ID>
   <cbc:IssueDate>2023-08-21+01:00</cbc:IssueDate>
-  <cbc:IssueTime>13:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueTime>15:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>02</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-08-23+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
@@ -148,13 +163,21 @@
   </cac:ContractingParty>
   <cac:TenderingTerms>
     <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID>Test Code</cbc:ID>
+      <cbc:ID schemeName="CrossBorderLaw">Test Code</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Descriptoin in portugues</cbc:DocumentDescription>
       <cbc:DocumentDescription languageID="FRA">Descriptoin in french</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
+    <cac:ProcurementLegislationDocumentReference>
+      <cbc:ID>Test ID</cbc:ID>
+      <cbc:DocumentDescription languageID="POR">Description in portuguese</cbc:DocumentDescription>
+      <cbc:DocumentDescription languageID="FRA">Description in french</cbc:DocumentDescription>
+    </cac:ProcurementLegislationDocumentReference>
   </cac:TenderingTerms>
   <cac:TenderingProcess>
-    <cbc:ProcedureCode listName="procurement-procedure-type">comp-dial</cbc:ProcedureCode>
+    <cbc:ProcedureCode listName="procurement-procedure-type">neg-wo-call</cbc:ProcedureCode>
+    <cac:ProcessJustification>
+      <cbc:ProcessReasonCode listName="direct-award-justification">additional</cbc:ProcessReasonCode>
+    </cac:ProcessJustification>
   </cac:TenderingProcess>
   <cac:ProcurementProject>
     <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
@@ -174,7 +197,11 @@
     <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
     <cac:TenderingTerms>
       <cac:ProcurementLegislationDocumentReference>
-        <cbc:ID schemeName="CrossBorderLaw">LocalLegalBasis</cbc:ID>
+        <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
+        <cbc:DocumentDescription>Testando campo</cbc:DocumentDescription>
+      </cac:ProcurementLegislationDocumentReference>
+      <cac:ProcurementLegislationDocumentReference>
+        <cbc:ID schemeName="LocalLegalBasis">Id Qualquer</cbc:ID>
         <cbc:DocumentDescription>Testando campo</cbc:DocumentDescription>
       </cac:ProcurementLegislationDocumentReference>
       <cac:AdditionalInformationParty>
@@ -191,8 +218,11 @@
       <cbc:Description languageID="FRA">Serviço público de transportes de passageiros de Águeda.</cbc:Description>
       <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
       <cac:MainCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">98910000</cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName="cpv">50420000</cbc:ItemClassificationCode>
       </cac:MainCommodityClassification>
+      <cac:AdditionalCommodityClassification>
+        <cbc:ItemClassificationCode listName="cpv">98513300</cbc:ItemClassificationCode>
+      </cac:AdditionalCommodityClassification>
       <cac:RealizedLocation>
         <cbc:Description languageID="POR">urbano/regional</cbc:Description>
         <cbc:Description languageID="FRA">urbano/regional</cbc:Description>

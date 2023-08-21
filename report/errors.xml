@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <svrl:schematron-output>
-  <svrl:failed-assert id="BR-OPT-00201-0052" location="/pin:PriorInformationNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[1]/efac:TouchPoint/cac:PartyIdentification/cbc:ID" test="matches(normalize-space(.),'^TPO-\d{4}$')" role="ERROR">
-    <svrl:text>OPT-201-Organization-TouchPoint deve corresponder ao seguinte padrão: TouchPointID</svrl:text>
+  <svrl:failed-assert id="BR-BT-00136-0053" location="/pin:PriorInformationNotice/cac:TenderingProcess/cac:ProcessJustification" test="count(cbc:ProcessReasonCode) = 0 or (../cbc:ProcedureCode/normalize-space(text()) = 'neg-wo-call')" role="ERROR">
+    <svrl:text>BT-136-Procedure não é autorizada no tipo de anúncio 'T01', nas seguintes condições: 'Tipo de procedimento' (BT-105) não é 'Por negociação sem abertura prévia de concurso'</svrl:text>
+    <svrl:diagnostic-reference diagnostic="BT-136-Procedure" see="field:BT-136-Procedure">
+      <svrl:text>cbc:ProcessReasonCode</svrl:text>
+    </svrl:diagnostic-reference>
   </svrl:failed-assert>
 </svrl:schematron-output>
