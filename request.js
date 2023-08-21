@@ -82,6 +82,7 @@ axios({
             console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
             Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach( (key, i) => {
               console.log("\nError " + (i + 1));
+              console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
               console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].test);
               console.log("---------------------------------\n");
             });

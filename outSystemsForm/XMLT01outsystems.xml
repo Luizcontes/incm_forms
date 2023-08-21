@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PriorInformationNotice xmlns='urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2'
+  xmlns:cac='urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2'
+  xmlns:cbc='urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2'
+  xmlns:efac='http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1'
+  xmlns:efbc='http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1'
+  xmlns:efext='http://data.europa.eu/p27/eforms-ubl-extensions/1'
+  xmlns:ext='urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2'>
+
+  <!-- 03 ->  <cac:ContractingParty> -->
+  <cac:ContractingParty>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID></cbc:ID>
+      </cac:PartyIdentification>
+    </cac:Party>
+    <cac:ContractingPartyType>
+      <cbc:PartyTypeCode listName='eforms-buyer-legal-type'></cbc:PartyTypeCode>
+    </cac:ContractingPartyType>
+    <cac:ContractingActivity>
+      <cbc:ActivityTypeCode listName='entity-activity'></cbc:ActivityTypeCode>
+    </cac:ContractingActivity>
+    <cac:ContractingActivity>
+      <cbc:ActivityTypeCode listName='authority-activity'></cbc:ActivityTypeCode>
+    </cac:ContractingActivity>
+    <cbc:BuyerProfileURI></cbc:BuyerProfileURI>
+    <cac:ServiceProviderParty>
+      <cac:Party>
+        <cac:PartyIdentification>
+          <cbc:ID></cbc:ID>
+        </cac:PartyIdentification>
+      </cac:Party>
+      <cbc:ServiceTypeCode listName='organisation-role-service'></cbc:ServiceTypeCode>
+    </cac:ServiceProviderParty>
+  </cac:ContractingParty>
+
+  <!-- General information (should be grouped together) -->
+  <cbc:RegulatoryDomain></cbc:RegulatoryDomain>
+
+  <!-- 05 -> <cac:ProcurementProject> -->
+  <cac:ProcurementProject>
+    <cbc:ID></cbc:ID>
+    <cbc:Name></cbc:Name>
+    <cbc:Description></cbc:Description>
+    <cbc:ProcurementTypeCode listName='eforms-contract-nature'></cbc:ProcurementTypeCode>
+    <cac:ProcurementAdditionalType>
+      <cbc:ProcurementTypeCode listName='eforms-contract-nature'></cbc:ProcurementTypeCode>
+    </cac:ProcurementAdditionalType>
+    <cac:MainCommodityClassification>
+      <cbc:ItemClassificationCode listName='classification-type'></cbc:ItemClassificationCode>
+      <cbc:ItemClassificationCode listName='cpv'></cbc:ItemClassificationCode>
+    </cac:MainCommodityClassification>
+    <cac:AdditionalCommodityClassification>
+      <cbc:ItemClassificationCode listName='classification-type'></cbc:ItemClassificationCode>
+      <cbc:ItemClassificationCode listName='cpv'></cbc:ItemClassificationCode>
+    </cac:AdditionalCommodityClassification>
+    <cbc:Note></cbc:Note>
+  </cac:ProcurementProject>
+
+  <cac:TenderingTerms>
+    <cac:ProcurementLegislationDocumentReference>
+      <cbc:ID></cbc:ID>
+      <cbc:DocumentDescription></cbc:DocumentDescription>
+    </cac:ProcurementLegislationDocumentReference>
+    <cac:ProcurementLegislationDocumentReference>
+      <cbc:ID></cbc:ID>
+      <cbc:DocumentDescription></cbc:DocumentDescription>
+    </cac:ProcurementLegislationDocumentReference>
+    <cac:ProcurementLegislationDocumentReference>
+      <cbc:ID></cbc:ID>
+      <cbc:DocumentDescription></cbc:DocumentDescription>
+    </cac:ProcurementLegislationDocumentReference>
+  </cac:TenderingTerms>
+
+
+  <!-- 04 ->  <cac:TenderingProcess> -->
+  <cac:TenderingProcess>
+    <cbc:ProcedureCode listName='procurement-procedure-type'></cbc:ProcedureCode>
+    <ProcessJustification>
+      <ProcessReasonCode></ProcessReasonCode>
+    </ProcessJustification>
+  </cac:TenderingProcess>
+
+  <!-- 06 -> <cac:ProcurementProjectLot> -->
+  <ProcurementProjectLot41>
+    <cbc:ID>0</cbc:ID>
+    <cac:ProcurementProject>
+      <cbc:ID></cbc:ID>
+      <cbc:Name></cbc:Name>
+      <cbc:Description></cbc:Description>
+      <cbc:ProcurementTypeCode listName='eforms-contract-nature'></cbc:ProcurementTypeCode>
+      <EstimatedOverallContractQuantity>0</EstimatedOverallContractQuantity>
+      <EstimatedOverallContractQuantity2></EstimatedOverallContractQuantity2>
+      <cac:MainCommodityClassification>
+        <cbc:ItemClassificationCode listName='classification-type'></cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName='cpv'></cbc:ItemClassificationCode>
+      </cac:MainCommodityClassification>
+      <cac:AdditionalCommodityClassification>
+        <cbc:ItemClassificationCode listName='classification-type'></cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName='cpv'></cbc:ItemClassificationCode>
+      </cac:AdditionalCommodityClassification>
+      <cac:RealizedLocation>
+        <cac:Address>
+          <cbc:StreetName></cbc:StreetName>
+          <cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+          <AddressLine>
+            <cbc:Line></cbc:Line>
+          </AddressLine>
+          <cbc:CityName></cbc:CityName>
+          <cbc:PostalZone></cbc:PostalZone>
+          <cbc:CountrySubentityCode listName='nuts-lvl3'></cbc:CountrySubentityCode>
+          <cac:Country>
+            <cbc:IdentificationCode listName='eforms-country'></cbc:IdentificationCode>
+          </cac:Country>
+          <cbc:Region listName='other-place-service'></Region>
+        </cac:Address>
+        <cbc:Description></cbc:Description>
+      </cac:RealizedLocation>
+      <PlannedPeriod>
+        <StartDate></StartDate>
+        <EndDate></EndDate>
+        <DurationMeasure></DurationMeasure>
+        <DescriptionCode></DescriptionCode>
+      </PlannedPeriod>
+      <cbc:Note></cbc:Note>
+    </cac:ProcurementProject>
+    <cac:TenderingTerms>
+      <AdditionalInformationParty>
+        <cac:PartyIdentification>
+          <cbc:ID></cbc:ID>
+        </cac:PartyIdentification>
+      </AdditionalInformationParty>
+    </cac:TenderingTerms>
+  </ProcurementProjectLot41>
+
+  <!-- 01 -> <ext:UBLExtensions> -->
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <efext:EformsExtension>
+          <Organizations>
+            <Organization9>
+              <Company>
+                <cac:PartyIdentification>
+                  <cbc:ID></cbc:ID>
+                </cac:PartyIdentification>
+                <PartyName>
+                  <cbc:Name></cbc:Name>
+                </PartyName>
+                <PartyLegalEntity>
+                  <CompanyId></CompanyId>
+                </PartyLegalEntity>
+                <WebsiteURI></WebsiteURI>
+                <EndpointId></EndpointId>
+                <PostalAddress>
+                  <Department></Department>
+                  <cbc:StreetName></cbc:StreetName>
+                  <cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+                  <AddressLine>
+                    <cbc:Line></cbc:Line>
+                  </AddressLine>
+                  <cbc:CityName></cbc:CityName>
+                  <cbc:PostalZone></cbc:PostalZone>
+                  <cbc:CountrySubentityCode listName='nuts-lvl3'></cbc:CountrySubentityCode>
+                  <cac:Country>
+                    <cbc:IdentificationCode listName='eforms-country'></cbc:IdentificationCode>
+                  </cac:Country>
+                </PostalAddress>
+                <Contact>
+                  <cbc:Name></cbc:Name>
+                  <ElectronicMail></ElectronicMail>
+                  <Telephone></Telephone>
+                  <Telefax></Telefax>
+                </Contact>
+              </Company>
+              <TouchPoint>
+                <cac:PartyIdentification>
+                  <cbc:ID></cbc:ID>
+                </cac:PartyIdentification>
+                <PartyName>
+                  <cbc:Name></cbc:Name>
+                </PartyName>
+                <WebsiteURI></WebsiteURI>
+                <EndpointId></EndpointId>
+                <PostalAddress>
+                  <Department></Department>
+                  <cbc:StreetName></cbc:StreetName>
+                  <cbc:AdditionalStreetName></cbc:AdditionalStreetName>
+                  <AddressLine>
+                    <cbc:Line></cbc:Line>
+                  </AddressLine>
+                  <cbc:CityName></cbc:CityName>
+                  <cbc:PostalZone></cbc:PostalZone>
+                  <cbc:CountrySubentityCode listName='nuts-lvl3'></cbc:CountrySubentityCode>
+                  <cac:Country>
+                    <cbc:IdentificationCode listName='eforms-country'></cbc:IdentificationCode>
+                  </cac:Country>
+                </PostalAddress>
+                <Contact>
+                  <cbc:Name></cbc:Name>
+                  <ElectronicMail></ElectronicMail>
+                  <Telephone></Telephone>
+                  <Telefax></Telefax>
+                </Contact>
+              </TouchPoint>
+              <AwardingCPBIndicator>false</AwardingCPBIndicator>
+              <AcquiringCPBIndicator>false</AcquiringCPBIndicator>
+            </Organization9>
+          </Organizations>
+          <efac:Changes>
+            <efac:ChangeReason>
+              <efbc:ReasonDescription></efbc:ReasonDescription>
+            </efac:ChangeReason>
+            <efac:Change>
+              <efac:ChangedSection>
+                <efbc:efac:ChangedSectionIdentifier></efbc:efac:ChangedSectionIdentifier>
+              </efac:ChangedSection>
+              <efbc:ChangeDescription></efbc:ChangeDescription>
+              <efbc:ProcurementDocumentsChangeIndicator>false</efbc:ProcurementDocumentsChangeIndicator>
+              <efbc:ProcurementDocumentsChangeDate></efbc:ProcurementDocumentsChangeDate>
+            </efac:Change>
+          </efac:Changes>
+          <efac:NoticeSubType>
+            <cbc:SubTypeCode listName='notice-subtype'>T01</cbc:SubTypeCode>
+          </efac:NoticeSubType>
+        </efext:EformsExtension>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+
+  <!-- General information (should be grouped together) -->
+  <cbc:UBLVersionID></cbc:UBLVersionID>
+  <cbc:CustomizationID></cbc:CustomizationID>
+  <cbc:ID schemeName='notice-id'></cbc:ID>
+  <cbc:IssueDate></cbc:IssueDate>
+  <cbc:IssueTime></cbc:IssueTime>
+  <cbc:VersionID></cbc:VersionID>
+  <cbc:RequestedPublicationDate></cbc:RequestedPublicationDate>
+  <cbc:NoticeTypeCode listName='notice-type'></cbc:NoticeTypeCode>
+  <cbc:NoticeTypeCode listName='form-type'></cbc:NoticeTypeCode>
+  <cbc:NoticeLanguageCode listName='eu-official-language'>
+  </cbc:NoticeLanguageCode>
+
+  <cac:AdditionalNoticeLanguage>
+    <!-- message":"cvc-complex-type.3.2.2: Attribute 'listName' is not allowed to appear in element 'cbc:ID'. -->
+    <cbc:ID listName='eu-official-language'></cbc:ID>
+  </cac:AdditionalNoticeLanguage>
+
+</PriorInformationNotice>
+

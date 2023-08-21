@@ -2,7 +2,8 @@
 <!-- Currently filled in with fake values.
 -->
 <PriorInformationNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1" xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1" xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<ext:UBLExtensions>
+	
+  <ext:UBLExtensions>
 		<ext:UBLExtension>
 			<ext:ExtensionContent>
 				<efext:EformsExtension>
@@ -71,6 +72,7 @@
 			</ext:ExtensionContent>
 		</ext:UBLExtension>
 	</ext:UBLExtensions>
+
 	<cbc:UBLVersionID>2.3</cbc:UBLVersionID>
 	<cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
 	<cbc:ID schemeName="notice-id">f9f21ada-9a5f-4920-a934-c423fc20fcd0</cbc:ID>
@@ -80,6 +82,7 @@
 	<cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
 	<cbc:NoticeTypeCode listName="planning">pin-tran</cbc:NoticeTypeCode>
 	<cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
+
 	<cac:ContractingParty>
 		<cac:ContractingPartyType>
 			<cbc:PartyTypeCode listName="buyer-legal-type">ra</cbc:PartyTypeCode>
@@ -104,9 +107,11 @@
 			</cac:ServiceProviderParty>
 		</cac:Party>
 	</cac:ContractingParty>
+
 	<cac:TenderingProcess>
 		<cbc:ProcedureCode listName="procurement-procedure-type">open</cbc:ProcedureCode>
 	</cac:TenderingProcess>
+
 	<cac:ProcurementProject>
 		<cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
 		<cbc:Name languageID="POR">Public road transport services</cbc:Name>
@@ -119,6 +124,7 @@
 			<cbc:ItemClassificationCode listName="cpv">60112000</cbc:ItemClassificationCode>
 		</cac:MainCommodityClassification>
 	</cac:ProcurementProject>
+
 	<cac:ProcurementProjectLot>
 		<cbc:ID schemeName="Lot">LOT-0000</cbc:ID>
 		<cac:TenderingTerms>
@@ -151,4 +157,5 @@
 			</cac:PlannedPeriod>
 		</cac:ProcurementProject>
 	</cac:ProcurementProjectLot>
+  
 </PriorInformationNotice>

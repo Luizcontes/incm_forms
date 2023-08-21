@@ -30,165 +30,35 @@
   <svrl:fired-rule context="//cbc:ProcurementTypeCode" />
   <svrl:fired-rule context="//cbc:ProcurementTypeCode" />
   <svrl:active-pattern id="EFORMS-validation-stage-1b" />
-  <svrl:fired-rule context="/*[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="ND-ProcedureTenderingProcess-1" location="/pin:PriorInformationNotice" test="count(cac:TenderingProcess) = 0" role="ERROR">
-    <svrl:text>rule|text|ND-ProcedureTenderingProcess-1</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-ProcedureTenderingProcess" see="node:ND-ProcedureTenderingProcess">
-      <svrl:text>cac:TenderingProcess</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:MainCommodityClassification[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot'][/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="ND-LotTenderingTerms-1" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot" test="count(cac:TenderingTerms) = 0" role="ERROR">
-    <svrl:text>rule|text|ND-LotTenderingTerms-1</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotTenderingTerms" see="node:ND-LotTenderingTerms">
-      <svrl:text>cac:TenderingTerms</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="ND-LotMainClassification-1" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cac:MainCommodityClassification) = 0" role="ERROR">
-    <svrl:text>rule|text|ND-LotMainClassification-1</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotMainClassification" see="node:ND-LotMainClassification">
-      <svrl:text>cac:MainCommodityClassification</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="ND-LotDuration-1" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cac:PlannedPeriod) = 0" role="ERROR">
-    <svrl:text>rule|text|ND-LotDuration-1</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotDuration" see="node:ND-LotDuration">
-      <svrl:text>cac:PlannedPeriod</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="ND-LotPlacePerformance-1" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cac:RealizedLocation) = 0" role="ERROR">
-    <svrl:text>rule|text|ND-LotPlacePerformance-1</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotPlacePerformance" see="node:ND-LotPlacePerformance">
-      <svrl:text>cac:RealizedLocation</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
+  <svrl:fired-rule context="/*[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot'][/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:TenderingTerms[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:TenderingProcess[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
   <svrl:active-pattern id="EFORMS-validation-stage-2a" />
-  <svrl:fired-rule context="/*[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/cac:ContractingParty[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00740-0004" location="/pin:PriorInformationNotice/cac:ContractingParty" test="count(cac:ContractingPartyType/cbc:PartyTypeCode[@listName='buyer-contracting-type']) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00740-0004</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-740-Procedure-Buyer" see="field:BT-740-Procedure-Buyer">
-      <svrl:text>cac:ContractingPartyType/cbc:PartyTypeCode[@listName='buyer-contracting-type']</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00024-0004" location="/pin:PriorInformationNotice/cac:ProcurementProject" test="count(cbc:Description) > 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00024-0004</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-24-Procedure" see="field:BT-24-Procedure">
-      <svrl:text>cbc:Description</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-OPP-00040-0004" location="/pin:PriorInformationNotice/cac:ProcurementProject" test="count(cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[@listName='transport-service']) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-OPP-00040-0004</svrl:text>
-    <svrl:diagnostic-reference diagnostic="OPP-040-Procedure" see="field:OPP-040-Procedure">
-      <svrl:text>cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[@listName='transport-service']</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot'][/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00137-0106" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot" test="count(cbc:ID) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00137-0106</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-137-Lot" see="field:BT-137-Lot">
-      <svrl:text>cbc:ID</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00021-0160" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cbc:Name) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00021-0160</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-21-Lot" see="field:BT-21-Lot">
-      <svrl:text>cbc:Name</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00022-0157" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cbc:ID) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00022-0157</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-22-Lot" see="field:BT-22-Lot">
-      <svrl:text>cbc:ID</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00023-0106" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cbc:ProcurementTypeCode[@listName='contract-nature']) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00023-0106</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-23-Lot" see="field:BT-23-Lot">
-      <svrl:text>cbc:ProcurementTypeCode[@listName='contract-nature']</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00024-0160" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cbc:Description) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00024-0160</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-24-Lot" see="field:BT-24-Lot">
-      <svrl:text>cbc:Description</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-00262-0105" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject" test="count(cac:MainCommodityClassification/cbc:ItemClassificationCode) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00262-0105</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotProcurementScope_BT-262-Lot" see="field:BT-262-Lot">
-      <svrl:text>cac:MainCommodityClassification/cbc:ItemClassificationCode</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00026-0154" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode" test="count(@listName) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00026-0154</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-26_m_-Lot" see="field:BT-26(m)-Lot">
-      <svrl:text>@listName</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:PlannedPeriod[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00036-0055" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject/cac:PlannedPeriod" test="count(cbc:DurationMeasure) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00036-0055</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-36-Lot" see="field:BT-36-Lot">
-      <svrl:text>cbc:DurationMeasure</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-OPT-00036-0055" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject/cac:PlannedPeriod" test="count(cbc:DurationMeasure) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-OPT-00036-0055</svrl:text>
-    <svrl:diagnostic-reference diagnostic="OPA-36-Lot-Number" see="field:OPA-36-Lot-Number">
-      <svrl:text>cbc:DurationMeasure</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00728-0108" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject/cac:RealizedLocation" test="count(cbc:Description) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00728-0108</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-728-Lot" see="field:BT-728-Lot">
-      <svrl:text>cbc:Description</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-05071-0106" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject/cac:RealizedLocation" test="count(cac:Address/cbc:CountrySubentityCode) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-05071-0106</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotPlacePerformance_BT-5071-Lot" see="field:BT-5071-Lot">
-      <svrl:text>cac:Address/cbc:CountrySubentityCode</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BR-BT-05141-0106" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:ProcurementProject/cac:RealizedLocation" test="count(cac:Address/cac:Country/cbc:IdentificationCode) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-05141-0106</svrl:text>
-    <svrl:diagnostic-reference diagnostic="ND-LotPlacePerformance_BT-5141-Lot" see="field:BT-5141-Lot">
-      <svrl:text>cac:Address/cac:Country/cbc:IdentificationCode</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:TenderingTerms[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-OPT-00301-0862" location="/pin:PriorInformationNotice/cac:ProcurementProjectLot/cac:TenderingTerms" test="count(cac:AdditionalInformationParty/cac:PartyIdentification/cbc:ID) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-OPT-00301-0862</svrl:text>
-    <svrl:diagnostic-reference diagnostic="OPT-301-Lot-AddInfo" see="field:OPT-301-Lot-AddInfo">
-      <svrl:text>cac:AdditionalInformationParty/cac:PartyIdentification/cbc:ID</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/cac:TenderingProcess[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:failed-assert id="BR-BT-00105-0004" location="/pin:PriorInformationNotice/cac:TenderingProcess" test="count(cbc:ProcedureCode) = 0" role="ERROR">
-    <svrl:text>rule|text|BR-BT-00105-0004</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-105-Procedure" see="field:BT-105-Procedure">
-      <svrl:text>cbc:ProcedureCode</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
-  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = '1']" />
+  <svrl:fired-rule context="/*[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ContractingParty[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:MainCommodityClassification[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot'][/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:MainCommodityClassification[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:PlannedPeriod[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:TenderingTerms[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:TenderingProcess[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
   <svrl:active-pattern id="EFORMS-validation-stage-2b" />
   <svrl:fired-rule context="/*" />
   <svrl:fired-rule context="/*/cac:ContractingParty" />
@@ -196,28 +66,46 @@
   <svrl:fired-rule context="/*/cac:ContractingParty/cac:Party/cac:ServiceProviderParty" />
   <svrl:fired-rule context="/*/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cac:Party" />
   <svrl:fired-rule context="/*/cac:ProcurementProject" />
-  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:MainCommodityClassification" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:ProcurementAdditionalType[cbc:ProcurementTypeCode/@listName='transport-service']" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject" />
-  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:MainCommodityClassification" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:PlannedPeriod" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cac:Address" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:TenderingTerms" />
   <svrl:fired-rule context="/*/cac:TenderingProcess" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyLegalEntity" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyLegalEntity" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Name" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Description" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Description" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Note" />
   <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Note" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cbc:Description" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cbc:Description" />
   <svrl:active-pattern id="EFORMS-validation-stage-3a" />
+  <svrl:fired-rule context="//*[not(child::*) and normalize-space(text()) = '']" />
+  <svrl:failed-assert id="element-not-empty" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference/cbc:ID" test="false()" role="ERROR">
+    <svrl:text>
+			Os campos devem ser preenchidos</svrl:text>
+  </svrl:failed-assert>
   <svrl:active-pattern id="EFORMS-validation-stage-3b" />
   <svrl:fired-rule context="/*/cbc:RegulatoryDomain" />
   <svrl:fired-rule context="/*/cbc:NoticeTypeCode" />
@@ -236,16 +124,25 @@
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cac:Country/cbc:IdentificationCode" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cac:Country/cbc:IdentificationCode" />
   <svrl:fired-rule context="/*/cbc:NoticeLanguageCode" />
+  <svrl:fired-rule context="/*/cac:AdditionalNoticeLanguage/cbc:ID" />
   <svrl:fired-rule context="/*/cac:ContractingParty/cac:ContractingPartyType/cbc:PartyTypeCode[@listName='buyer-contracting-type']" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:CountrySubentityCode" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cac:Country/cbc:IdentificationCode" />
-  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[@listName='transport-service']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cac:ProcurementAdditionalType[cbc:ProcurementTypeCode/@listName='transport-service']/cbc:ProcurementTypeCode" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode" />
   <svrl:fired-rule context="/*/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cbc:ServiceTypeCode" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
+  <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Name" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Name" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Description" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Description" />
   <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Note" />
+  <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Note" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:Name" />
@@ -264,6 +161,7 @@
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:CityName" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:CityName" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cbc:Description" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation/cbc:Description" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:Telefax" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:Telefax" />
   <svrl:fired-rule context="/*/cbc:IssueDate" />
@@ -272,6 +170,9 @@
   <svrl:fired-rule context="/*/cbc:ID[@schemeName='notice-id']" />
   <svrl:fired-rule context="/*/cbc:RequestedPublicationDate" />
   <svrl:fired-rule context="/*/cbc:VersionID" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:NoticePublicationID[@schemeName='ojs-notice-id']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:GazetteID[@schemeName='ojs-id']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:PublicationDate" />
   <svrl:fired-rule context="/*/cbc:UBLVersionID" />
   <svrl:fired-rule context="/*/cbc:CustomizationID" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyIdentification/cbc:ID" />
@@ -279,8 +180,15 @@
   <svrl:fired-rule context="/*/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cac:Party/cac:PartyIdentification/cbc:ID" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:TenderingTerms/cac:AdditionalInformationParty/cac:PartyIdentification/cbc:ID" />
   <svrl:active-pattern id="EFORMS-validation-stage-4" />
+  <svrl:fired-rule context="/*/cac:ContractingParty[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:PlannedPeriod[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cac:RealizedLocation[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
+  <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
   <svrl:active-pattern id="EFORMS-validation-stage-5" />
   <svrl:fired-rule context="/*" />
+  <svrl:fired-rule context="/*/cac:AdditionalNoticeLanguage/cbc:ID" />
   <svrl:fired-rule context="/*/cac:ContractingParty" />
   <svrl:fired-rule context="/*/cac:ContractingParty/cac:Party" />
   <svrl:fired-rule context="/*/cac:ProcurementProject" />
