@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <svrl:schematron-output>
-  <svrl:failed-assert id="BT-01_d_-Procedure_B" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[2]" test="(every $lg in (/*/cbc:NoticeLanguageCode, /*/cac:AdditionalNoticeLanguage/cbc:ID) satisfies cbc:DocumentDescription/@languageID = $lg) or count(cbc:DocumentDescription) = 0" role="ERROR">
-    <svrl:text>BT-01(d)-Procedure deve estar presente em todas as línguas oficiais do anúncio</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-01_d_-Procedure" see="field:BT-01(d)-Procedure">
-      <svrl:text>cbc:DocumentDescription</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BT-01_d_-Procedure_B" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[3]" test="(every $lg in (/*/cbc:NoticeLanguageCode, /*/cac:AdditionalNoticeLanguage/cbc:ID) satisfies cbc:DocumentDescription/@languageID = $lg) or count(cbc:DocumentDescription) = 0" role="ERROR">
-    <svrl:text>BT-01(d)-Procedure deve estar presente em todas as línguas oficiais do anúncio</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-01_d_-Procedure" see="field:BT-01(d)-Procedure">
-      <svrl:text>cbc:DocumentDescription</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BT-01_d_-Procedure_D" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[2]/cbc:DocumentDescription" test="@languageID" role="ERROR">
-    <svrl:text>Deve ser especificada uma língua para BT-01(d)-Procedure</svrl:text>
-  </svrl:failed-assert>
-  <svrl:failed-assert id="BT-01_d_-Procedure_D" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[3]/cbc:DocumentDescription" test="@languageID" role="ERROR">
-    <svrl:text>Deve ser especificada uma língua para BT-01(d)-Procedure</svrl:text>
+  <svrl:failed-assert id="P-0033" location="/pin:PriorInformationNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:StrategicProcurement/efac:StrategicProcurementInformation/efac:ProcurementDetails[1]/efac:StrategicProcurementStatistics/efbc:StatisticsCode" test="@listName" role="ERROR">
+    <svrl:text>
+			O atributo obrigatório listName está em falta no elemento efbc:StatisticsCode</svrl:text>
   </svrl:failed-assert>
 </svrl:schematron-output>

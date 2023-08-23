@@ -113,15 +113,18 @@
             <efbc:GazetteID schemeName="ojs-id">42/1987</efbc:GazetteID>
             <efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
           </efac:Publication>
+          <efac:TenderSubcontractingRequirements>
+            <efbc:TenderSubcontractingRequirementsCode listName="subcontracting-indication">shar-subc</efbc:TenderSubcontractingRequirementsCode>
+          </efac:TenderSubcontractingRequirements>
         </efext:EformsExtension>
       </ext:ExtensionContent>
     </ext:UBLExtension>
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">6ba30f61-eaa2-4d39-8fa9-f03cb2325019</cbc:ID>
+  <cbc:ID schemeName="notice-id">c9c1b752-9a8c-4ceb-9a04-d52b6033e950</cbc:ID>
   <cbc:IssueDate>2023-08-23+01:00</cbc:IssueDate>
-  <cbc:IssueTime>10:00:00+01:00</cbc:IssueTime>
+  <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>02</cbc:VersionID>
   <cbc:RequestedPublicationDate>2023-08-25+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>

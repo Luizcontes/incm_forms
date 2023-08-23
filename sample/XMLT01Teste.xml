@@ -172,6 +172,48 @@ efbc > eForms specific extension basic components
             <efbc:GazetteID schemeName="ojs-id">42/1987</efbc:GazetteID>
             <efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
           </efac:Publication>
+          
+          <!-- 
+          <efac:SelectionCriteria>
+            <cbc:Name languageID="POR">SelectionCriteriaTest</cbc:Name>
+            <cbc:Description languageID="POR">Lalalla</cbc:Description>
+            <efac:CriterionParameter>
+              <efbc:ParameterNumeric>5</efbc:ParameterNumeric>
+            </efac:CriterionParameter>
+          </efac:SelectionCriteria> -->
+
+          <!-- <efac:StrategicProcurement>
+            <efbc:ApplicableLegalBasis>false</efbc:ApplicableLegalBasis>
+            <efac:StrategicProcurementInformation>
+              <efbc:ProcurementCategoryCode>oth-serv-contr</efbc:ProcurementCategoryCode>
+              <efac:ProcurementDetails>
+                <efbc:AssetCategoryCode>m1</efbc:AssetCategoryCode>
+                <efac:StrategicProcurementStatistics>
+                  <efbc:StatisticsCode listName="">vehicles</efbc:StatisticsCode>
+                  <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
+                </efac:StrategicProcurementStatistics>
+              </efac:ProcurementDetails>
+              <efac:ProcurementDetails>
+                <efbc:AssetCategoryCode>m1</efbc:AssetCategoryCode>
+              </efac:ProcurementDetails>
+            </efac:StrategicProcurementInformation>
+          </efac:StrategicProcurement> -->
+
+          <efac:TenderSubcontractingRequirements>
+            <efbc:TenderSubcontractingRequirementsCode listName="subcontracting-indication">shar-subc</efbc:TenderSubcontractingRequirementsCode>
+          </efac:TenderSubcontractingRequirements>
+
+          <!-- <efac:Changes>
+            <efac:Change>
+              <efbc:ChangeDescription languageID="POR">Reason</efbc:ChangeDescription>
+              <efbc:ProcurementDocumentsChangeDate>2023-08-25+01:00</efbc:ProcurementDocumentsChangeDate>
+              <efbc:ProcurementDocumentsChangeIndicator>false</efbc:ProcurementDocumentsChangeIndicator>
+              <efac:ChangedSection>
+                <efbc:ChangedSectionIdentifier>PROCEDURE</efbc:ChangedSectionIdentifier>
+              </efac:ChangedSection>
+            </efac:Change>
+          </efac:Changes> -->
+          
 
         </efext:EformsExtension>
       </ext:ExtensionContent>

@@ -35,6 +35,11 @@
   <svrl:fired-rule context="//cbc:ProcurementTypeCode" />
   <svrl:fired-rule context="//cbc:ProcurementTypeCode" />
   <svrl:fired-rule context="//cbc:ProcurementTypeCode" />
+  <svrl:fired-rule context="//efbc:StatisticsCode" />
+  <svrl:failed-assert id="P-0033" location="/pin:PriorInformationNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:StrategicProcurement/efac:StrategicProcurementInformation/efac:ProcurementDetails[1]/efac:StrategicProcurementStatistics/efbc:StatisticsCode" test="@listName" role="ERROR">
+    <svrl:text>
+			O atributo obrigatório listName está em falta no elemento efbc:StatisticsCode</svrl:text>
+  </svrl:failed-assert>
   <svrl:active-pattern id="EFORMS-validation-stage-1b" />
   <svrl:fired-rule context="/*[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
   <svrl:fired-rule context="/*/cac:ProcurementProject[/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode/text() = 'T01']" />
@@ -92,19 +97,7 @@
   <svrl:fired-rule context="/*/cac:TenderingProcess/cac:ProcessJustification[cbc:ProcessReasonCode/@listName='direct-award-justification']" />
   <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]" />
   <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]" />
-  <svrl:failed-assert id="BT-01_d_-Procedure_B" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[2]" test="(every $lg in (/*/cbc:NoticeLanguageCode, /*/cac:AdditionalNoticeLanguage/cbc:ID) satisfies cbc:DocumentDescription/@languageID = $lg) or count(cbc:DocumentDescription) = 0" role="ERROR">
-    <svrl:text>BT-01(d)-Procedure deve estar presente em todas as línguas oficiais do anúncio</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-01_d_-Procedure" see="field:BT-01(d)-Procedure">
-      <svrl:text>cbc:DocumentDescription</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
   <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]" />
-  <svrl:failed-assert id="BT-01_d_-Procedure_B" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[3]" test="(every $lg in (/*/cbc:NoticeLanguageCode, /*/cac:AdditionalNoticeLanguage/cbc:ID) satisfies cbc:DocumentDescription/@languageID = $lg) or count(cbc:DocumentDescription) = 0" role="ERROR">
-    <svrl:text>BT-01(d)-Procedure deve estar presente em todas as línguas oficiais do anúncio</svrl:text>
-    <svrl:diagnostic-reference diagnostic="BT-01_d_-Procedure" see="field:BT-01(d)-Procedure">
-      <svrl:text>cbc:DocumentDescription</svrl:text>
-    </svrl:diagnostic-reference>
-  </svrl:failed-assert>
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization" />
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization" />
@@ -115,13 +108,7 @@
   <svrl:fired-rule context="/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint" />
   <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
   <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
-  <svrl:failed-assert id="BT-01_d_-Procedure_D" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[2]/cbc:DocumentDescription" test="@languageID" role="ERROR">
-    <svrl:text>Deve ser especificada uma língua para BT-01(d)-Procedure</svrl:text>
-  </svrl:failed-assert>
   <svrl:fired-rule context="/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription" />
-  <svrl:failed-assert id="BT-01_d_-Procedure_D" location="/pin:PriorInformationNotice/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[3]/cbc:DocumentDescription" test="@languageID" role="ERROR">
-    <svrl:text>Deve ser especificada uma língua para BT-01(d)-Procedure</svrl:text>
-  </svrl:failed-assert>
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProject/cbc:Name" />
   <svrl:fired-rule context="/*/cac:ProcurementProjectLot[cbc:ID/@schemeName='Lot']/cac:ProcurementProject/cbc:Description" />
