@@ -80,7 +80,7 @@ axios({
             delete result['svrl:schematron-output']['$'];
 
             console.log("Errors: " + result['svrl:schematron-output']['svrl:failed-assert'].length)
-            Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach( (key, i) => {
+            Object.keys(result['svrl:schematron-output']['svrl:failed-assert']).forEach((key, i) => {
               console.log("\nError " + (i + 1));
               console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].location);
               console.log(result['svrl:schematron-output']['svrl:failed-assert'][key]['$'].test);
@@ -94,4 +94,7 @@ axios({
       console.log("Congrats you rock!!!!");
     }
   })
-  .catch(err => console.log(err.response.data));
+  .catch(err => {
+    console.log("CATCH BLOCK!!!!");
+    console.log(err.response.data);
+  });

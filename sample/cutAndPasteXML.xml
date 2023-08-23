@@ -1,79 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PriorInformationNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2"
-  xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
-  xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
-  xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
-  xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
-  xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
-  xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
-  <cac:ProcurementLegislationDocumentReference>
-    <cbc:ID/>
-    <cbc:DocumentDescription/>
-    <cbc:ID/>
-    <cbc:DocumentDescription/>
-  </cac:ProcurementLegislationDocumentReference>
-  <cac:ProcurementLegislationDocumentReference>
-    <cbc:ID/>
-    <cbc:DocumentDescription/>
-  </cac:ProcurementLegislationDocumentReference>
-  <cac:AdditionalCommodityClassification>
-    <cbc:ItemClassificationCode listName="classification-type"/>
-    <cbc:ItemClassificationCode listName="cpv"/>
-  </cac:AdditionalCommodityClassification>
-  <efac:Change>
-    <efac:ChangedSection>
-      <efbc:ChangedSectionIdentifier/>
-    </efac:ChangedSection>
-    <efbc:ChangeDescription/>
-    <efbc:ProcurementDocumentsChangeIndicator/>
-    <efbc:ProcurementDocumentsChangeDate/>
-  </efac:Change>
-  
-  <efac:Organization>
-    <efac:Company>
-      <cac:PartyIdentification>
-        <cbc:ID>ORG-0001</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyName>
-        <cbc:Name/>
-      </cac:PartyName>
-      <cac:PartyLegalEntity>
-        <cbc:CompanyID/>
-      </cac:PartyLegalEntity>
-      <cbc:WebsiteURI/>
-    </efac:Company>
-    <efac:TouchPoint>
-      <cac:PostalAddress>
-        <cbc:Department/>
-        <cbc:StreetName/>
-        <cbc:AdditionalStreetName/>
-        <cac:AddressLine>
-          <cbc:Line/>
-        </cac:AddressLine>
-        <cbc:CityName/>
-        <cbc:PostalZone/>
-        <cbc:CountrySubentityCode listName="nuts-lvl3"/>
-        <cac:Country>
-          <cbc:IdentificationCode listName="eforms-country"/>
-        </cac:Country>
-      </cac:PostalAddress>
-      <cac:Contact>
-        <cbc:Name/>
-        <cbc:ElectronicMail/>
-        <cbc:Telephone/>
-        <cbc:Telefax/>
-      </cac:Contact>
-      <cac:PartyIdentification>
-        <cbc:ID>TPO-0001</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyName>
-        <cbc:Name/>
-      </cac:PartyName>
-      <cbc:WebsiteURI/>
-    </efac:TouchPoint>
-    <efbc:AwardingCPBIndicator/>
-    <efbc:AcquiringCPBIndicator/>
-  </efac:Organization>
+                         xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+                         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+                         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+                         xmlns:efext="http://data.europa.eu/p27/eforms-ubl-extensions/1"
+                         xmlns:efac="http://data.europa.eu/p27/eforms-ubl-extension-aggregate-components/1"
+                         xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
@@ -81,100 +15,19 @@
           <efac:NoticeSubType>
             <cbc:SubTypeCode listName="notice-subtype">T01</cbc:SubTypeCode>
           </efac:NoticeSubType>
+          <efac:Changes>
+            <efac:Change>
+              <efbc:ProcurementDocumentsChangeIndicator>false</efbc:ProcurementDocumentsChangeIndicator>
+            </efac:Change>
+          </efac:Changes>
         </efext:EformsExtension>
       </ext:ExtensionContent>
     </ext:UBLExtension>
   </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
-  <cbc:CustomizationID>eforms-sdk-1.7.0</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">2a1ae687-d969-49c3-a539-809e0a57b68c</cbc:ID>
-  <cbc:IssueDate/>
-  <cbc:IssueTime/>
-  <cbc:VersionID>01</cbc:VersionID>
-  <cbc:RequestedPublicationDate/>
-  <cbc:RegulatoryDomain listName="eforms-legal-basis"/>
-  <cbc:NoticeTypeCode listName="notice-type"/>
-  <cbc:NoticeTypeCode listName="form-type"/>
-  <cbc:NoticeLanguageCode listName="eu-official-language"/>
-  <cac:AdditionalNoticeLanguage>
-    <cbc:ID listName="eu-official-language"/>
-  </cac:AdditionalNoticeLanguage>
-  <cac:ContractingParty>
-    <cac:ServiceProviderParty>
-      <cac:Party>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:Party>
-      <cbc:ServiceTypeCode listName="organisation-role-service"/>
-    </cac:ServiceProviderParty>
-    <cbc:BuyerProfileURI/>
-    <cac:ContractingPartyType>
-      <cbc:PartyTypeCode listName="eforms-buyer-legal-type"/>
-    </cac:ContractingPartyType>
-    <cac:ContractingPartyType>
-      <cbc:PartyTypeCode listName="buyer-contracting-type"/>
-    </cac:ContractingPartyType>
-    <cac:ContractingActivity>
-      <cbc:ActivityTypeCode listName="authority-activity"/>
-    </cac:ContractingActivity>
-    <cac:Party>
-      <cac:PartyIdentification>
-        <cbc:ID/>
-      </cac:PartyIdentification>
-    </cac:Party>
-  </cac:ContractingParty>
-  <cac:TenderingTerms>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID/>
-      <cbc:DocumentDescription/>
-    </cac:ProcurementLegislationDocumentReference>
-  </cac:TenderingTerms>
-  <cac:TenderingProcess>
-    <cbc:ProcedureCode listName="procurement-procedure-type"/>
-  </cac:TenderingProcess>
-  <cac:ProcurementProject>
-    <cbc:ID/>
-    <cbc:Name/>
-    <cbc:ProcurementTypeCode listName="eforms-contract-nature"/>
-    <cbc:Note/>
-    <cac:ProcurementAdditionalType>
-      <cbc:ProcurementTypeCode listName="eforms-contract-nature"/>
-    </cac:ProcurementAdditionalType>
-    <cac:ProcurementAdditionalType>
-      <cbc:ProcurementTypeCode listName="transport-service"/>
-    </cac:ProcurementAdditionalType>
-  </cac:ProcurementProject>
-  <cac:ProcurementProjectLot>
-    <cac:TenderingTerms>
-      <cac:AdditionalInformationParty>
-        <cac:PartyIdentification>
-          <cbc:ID/>
-        </cac:PartyIdentification>
-      </cac:AdditionalInformationParty>
-    </cac:TenderingTerms>
-    <cac:TenderingProcess>
-      <cac:AdditionalCommodityClassification>
-        <cbc:ItemClassificationCode listName="classification-type"/>
-        <cbc:ItemClassificationCode listName="cpv"/>
-      </cac:AdditionalCommodityClassification>
-      <cac:RealizedLocation>
-        <cac:Address>
-          <cbc:StreetName/>
-          <cbc:AdditionalStreetName/>
-          <cac:AddressLine>
-            <cbc:Line/>
-          </cac:AddressLine>
-          <cbc:CityName/>
-          <cbc:PostalZone/>
-          <cbc:CountrySubentityCode listName="nuts-lvl3"/>
-          <cac:Country>
-            <cbc:IdentificationCode listName="eforms-country"/>
-          </cac:Country>
-          <cbc:Region listName="other-place-service"/>
-        </cac:Address>
-        <cbc:Description/>
-      </cac:RealizedLocation>
-    </cac:TenderingProcess>
-  </cac:ProcurementProjectLot>
+  <ProcurementProjectLot41>
+    <cbc:ID>0</cbc:ID>
+    <cac:ProcurementProject>
+      <EstimatedOverallContractQuantity>0</EstimatedOverallContractQuantity>
+    </cac:ProcurementProject>
+  </ProcurementProjectLot41>
 </PriorInformationNotice>

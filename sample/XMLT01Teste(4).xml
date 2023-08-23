@@ -64,7 +64,7 @@ efbc > eForms specific extension basic components
               <efac:Company>
                 <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
                 <cac:PartyIdentification>
-                  <cbc:ID schemeName="organization">ORG-0003</cbc:ID>                  <!-- colocar neste formato em Outsystems-->
+                  <cbc:ID schemeName="organization">ORG-0001</cbc:ID>                  <!-- colocar neste formato em Outsystems-->
                 </cac:PartyIdentification>
                 <cac:PartyName>
                   <cbc:Name languageID="POR">Município</cbc:Name>
@@ -82,6 +82,8 @@ efbc > eForms specific extension basic components
                   <cac:Country>
                     <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
                   </cac:Country>
+
+
                 </cac:PostalAddress>
                 <cac:PartyLegalEntity>
                   <cbc:CompanyID>PartyLegalEntityCID1234</cbc:CompanyID>                  <!-- Ver se existe algum formato -->
@@ -121,7 +123,6 @@ efbc > eForms specific extension basic components
                 <cac:Contact>
                   <cbc:Name>Head of ABC Department</cbc:Name>
                   <cbc:Telephone>+123 45678</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
                   <cbc:ElectronicMail>abc@xyz.europa.eu</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:TouchPoint>
@@ -173,6 +174,11 @@ efbc > eForms specific extension basic components
             <efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
           </efac:Publication>
 
+          <!-- <efac:SelectionCriteria>
+          </efac:SelectionCriteria> -->
+
+
+
         </efext:EformsExtension>
       </ext:ExtensionContent>
     </ext:UBLExtension>
@@ -187,7 +193,7 @@ efbc > eForms specific extension basic components
   <cbc:IssueTime></cbc:IssueTime>  <!-- Preenchido automaticamente-->
   <cbc:VersionID>02</cbc:VersionID>
   <!-- Dispatch Date -->
-  <cbc:RequestedPublicationDate>2023-08-25+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
+  <cbc:RequestedPublicationDate>2023-08-24+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
 
   <!-- Procedure > Purpose > Legal basis -->
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
@@ -218,7 +224,7 @@ efbc > eForms specific extension basic components
 
     <cac:Party>
       <cac:PartyIdentification>
-        <cbc:ID schemeName="organization">ORG-0003</cbc:ID>        <!-- colocar neste formato em Outsystems-->
+        <cbc:ID schemeName="organization">ORG-0001</cbc:ID>        <!-- colocar neste formato em Outsystems-->
       </cac:PartyIdentification>
 
       <!-- Este Service Provider deve estar mencionado acima ou nao existir -->
@@ -238,28 +244,26 @@ efbc > eForms specific extension basic components
 
   <!-- Problem figured out -->
   <cac:TenderingTerms>
-    <!-- BT-09(a)-Procedure -->
     <cac:ProcurementLegislationDocumentReference>
       <cbc:ID schemeName="CrossBorderLaw">Test Code</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Descriptoin in portugues</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
-
-    <!-- Procedure > Purpose > Other legal basis with an identifier (0001) -->
+	<!-- Procedure > Purpose > Other legal basis with an identifier (0001) -->
     <cac:ProcurementLegislationDocumentReference>
-      <!-- Legal basis of the procedure (ELI - CELEX) -->
-      <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
-      <!-- Legal basis of the procedure (description) -->
-      <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
+        <!-- Legal basis of the procedure (ELI - CELEX) -->
+      <cbc:ID>Id Qualquer</cbc:ID>
+        <!-- Legal basis of the procedure (description) -->
+      <cbc:DocumentDescription>Testando campo</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
 
-    <!-- Procedure > Purpose > Other legal basis without a known identifier (0001) -->
+      <!-- Procedure > Purpose > Other legal basis without a known identifier (0001) -->
     <cac:ProcurementLegislationDocumentReference>
-      <!-- Legal basis -->
+        <!-- Legal basis -->
       <cbc:ID schemeName='LocalLegalBasis'>Id Qualquer</cbc:ID>
-      <!-- Legal basis -->
-      <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
+        <!-- Legal basis -->
+      <cbc:DocumentDescription>Testando campo</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
-
+    
   </cac:TenderingTerms>
 
   <!-- 04 ->  <cac:TenderingProcess> -->
@@ -284,14 +288,7 @@ efbc > eForms specific extension basic components
 
     <cac:MainCommodityClassification>      <!-- Foi eliminado um dos ItemClassificationCode-->
       <cbc:ItemClassificationCode listName="cpv">03111900</cbc:ItemClassificationCode>
-
-      <!-- ItemClassificationCode 2 in OutSystems belongs to ProcurementProject
-            inside ProcurementProjectLot -->
     </cac:MainCommodityClassification>
-
-    <!-- Description - non existent in T01 eForms
-          AddittionalCommodityClassification - non existent in T01 eForms
-          to be removed in the OutSystems plataform -->
 
   </cac:ProcurementProject>
 
@@ -305,42 +302,57 @@ efbc > eForms specific extension basic components
           <cbc:ID schemeName="organization">TPO-0001</cbc:ID>          <!-- colocar neste formato em Outsystems-->
         </cac:PartyIdentification>
       </cac:AdditionalInformationParty>
+
     </cac:TenderingTerms>
 
     <cac:ProcurementProject>
+
       <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
       <cbc:Name languageID="POR">Serviço público de transportes de passageiros de Águeda</cbc:Name>
       <cbc:Description languageID="POR">Serviço público de transportes de passageiros de Águeda.</cbc:Description>
       <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
       <cbc:EstimatedOverallContractQuantity unitCode="3C">2</cbc:EstimatedOverallContractQuantity>
+
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
+
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="transporte-service">bus-s</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
+
       <cac:MainCommodityClassification>
         <cbc:ItemClassificationCode listName="cpv">50420000</cbc:ItemClassificationCode>
       </cac:MainCommodityClassification>
+
       <cac:AdditionalCommodityClassification>
         <cbc:ItemClassificationCode listName="cpv">98513300</cbc:ItemClassificationCode>
       </cac:AdditionalCommodityClassification>
+
       <cac:RealizedLocation>
         <cbc:Description languageID="POR">urbano/regional</cbc:Description>
+
         <cac:Address>
           <cbc:CountrySubentityCode listName="nuts">AT125</cbc:CountrySubentityCode>
           <cac:Country>
             <cbc:IdentificationCode listName="country">BRA</cbc:IdentificationCode>
           </cac:Country>
         </cac:Address>
+
       </cac:RealizedLocation>
+
       <cac:PlannedPeriod>
         <!-- <cbc:StartDate>2023-08-18+01:00</cbc:StartDate> -->
         <!-- <cbc:EndDate>2023-08-19+01:00</cbc:EndDate> -->
         <!-- <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure>  -->
         <cbc:DescriptionCode listName="timeperiod">UNKNOWN</cbc:DescriptionCode>
       </cac:PlannedPeriod>
+
     </cac:ProcurementProject>
+
   </cac:ProcurementProjectLot>
+
+  <!-- <efbc:TransmissionDate>2023-08-18+01:00</efbc:TransmissionDate>
+  <efbc:TransmissionTime>14:00:00+01:00</efbc:TransmissionTime> -->
 
 </PriorInformationNotice>
