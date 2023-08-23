@@ -81,40 +81,6 @@
                 </cac:Contact>
               </efac:TouchPoint>
             </efac:Organization>
-            <efac:Organization>
-              <efac:Company>
-                <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
-                <cac:PartyIdentification>
-                  <cbc:ID schemeName="organization">ORG-0002</cbc:ID>                  <!-- colocar neste formato em Outsystems-->
-                </cac:PartyIdentification>
-                <cac:PartyName>
-                  <cbc:Name languageID="POR">Município</cbc:Name>
-                </cac:PartyName>
-                <cac:PostalAddress>
-                  <cbc:StreetName>Praça</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>lisboa</cbc:CityName>
-                  <cbc:PostalZone>7670-130</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
-                  <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
-                  </cac:AddressLine>
-                  <cac:Country>
-                    <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
-                  </cac:Country>
-                </cac:PostalAddress>
-                <cac:PartyLegalEntity>
-                  <cbc:CompanyID>PartyLegalEntityCID1234</cbc:CompanyID>                  <!-- Ver se existe algum formato -->
-                </cac:PartyLegalEntity>
-                <cac:Contact>
-                  <cbc:Name>Serviço de Contratação Pública</cbc:Name>
-                  <cbc:Telephone>+351 286555145</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
-                  <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
-                </cac:Contact>
-              </efac:Company>
-            </efac:Organization>
           </efac:Organizations>
           <efac:Publication>
             <efbc:NoticePublicationID schemeName="ojs-notice-id">12345678-2023</efbc:NoticePublicationID>
