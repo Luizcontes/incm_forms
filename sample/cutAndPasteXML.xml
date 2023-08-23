@@ -1,37 +1,3 @@
-<!-- 
-eForms Expression Language" (EFX)
-
-For eForms we may distinguish three different document (XML Docs) types:
-
-  Prior Information Notice > pin
-
-  Contract Notice > cn
-
-  Contract Award Notice > can
-
-The Regulation identifies different form types:
-
-Planning,
-
-Competition,
-
-Direct Award Pre-notification (DAP),
-
-Result,
-
-Contract Modification,
-
-Change.
-
-cac > common aggregated components
-cbc > common basic components
-ext > common extension components
-efext > eForms specific extension
-efac > eForms specific extension aggregate components
-efbc > eForms specific extension basic components
-
--->
-
 <?xml version="1.0" encoding="UTF-8"?>
 <PriorInformationNotice xmlns="urn:oasis:names:specification:ubl:schema:xsd:PriorInformationNotice-2"
   xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
@@ -42,25 +8,17 @@ efbc > eForms specific extension basic components
   xmlns:efbc="http://data.europa.eu/p27/eforms-ubl-extension-basic-components/1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-  <!-- 01 -> <ext:UBLExtensions> -->
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
         <efext:EformsExtension>
-
-          <!-- Notice SubType -->
           <efac:NoticeSubType>
             <cbc:SubTypeCode listName="notice-subtype">T01</cbc:SubTypeCode>
           </efac:NoticeSubType>
-
           <efac:Organizations>
-
-            <!-- Organization ORG-0001 -->
             <efac:Organization>
-
               <efbc:AcquiringCPBIndicator>false</efbc:AcquiringCPBIndicator>
               <efbc:AwardingCPBIndicator>false</efbc:AwardingCPBIndicator>
-
               <efac:Company>
                 <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
                 <cac:PartyIdentification>
@@ -93,9 +51,6 @@ efbc > eForms specific extension basic components
                   <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:Company>
-
-
-              <!-- Implementing Touch Point -->
               <efac:TouchPoint>
                 <cbc:WebsiteURI>http://abc.europa.eu/</cbc:WebsiteURI>
                 <cac:PartyIdentification>
@@ -125,10 +80,7 @@ efbc > eForms specific extension basic components
                   <cbc:ElectronicMail>abc@xyz.europa.eu</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:TouchPoint>
-
             </efac:Organization>
-
-            <!-- Organization ORG-0002 -->
             <efac:Organization>
               <efac:Company>
                 <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
@@ -162,108 +114,45 @@ efbc > eForms specific extension basic components
                   <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:Company>
-
             </efac:Organization>
-
           </efac:Organizations>
-
           <efac:Publication>
             <efbc:NoticePublicationID schemeName="ojs-notice-id">12345678-2023</efbc:NoticePublicationID>
             <efbc:GazetteID schemeName="ojs-id">42/1987</efbc:GazetteID>
             <efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
           </efac:Publication>
-          
-          <!-- 
-          <efac:SelectionCriteria>
-            <cbc:Name languageID="POR">SelectionCriteriaTest</cbc:Name>
-            <cbc:Description languageID="POR">Lalalla</cbc:Description>
-            <efac:CriterionParameter>
-              <efbc:ParameterNumeric>5</efbc:ParameterNumeric>
-            </efac:CriterionParameter>
-          </efac:SelectionCriteria> -->
-
-          <!-- <efac:StrategicProcurement>
-            <efbc:ApplicableLegalBasis>false</efbc:ApplicableLegalBasis>
-            <efac:StrategicProcurementInformation>
-              <efbc:ProcurementCategoryCode>oth-serv-contr</efbc:ProcurementCategoryCode>
-              <efac:ProcurementDetails>
-                <efbc:AssetCategoryCode>m1</efbc:AssetCategoryCode>
-                <efac:StrategicProcurementStatistics>
-                  <efbc:StatisticsCode listName="">vehicles</efbc:StatisticsCode>
-                  <efbc:StatisticsNumeric>1</efbc:StatisticsNumeric>
-                </efac:StrategicProcurementStatistics>
-              </efac:ProcurementDetails>
-              <efac:ProcurementDetails>
-                <efbc:AssetCategoryCode>m1</efbc:AssetCategoryCode>
-              </efac:ProcurementDetails>
-            </efac:StrategicProcurementInformation>
-          </efac:StrategicProcurement> -->
-
           <efac:TenderSubcontractingRequirements>
             <efbc:TenderSubcontractingRequirementsCode listName="subcontracting-indication">shar-subc</efbc:TenderSubcontractingRequirementsCode>
           </efac:TenderSubcontractingRequirements>
-
-          <!-- <efac:Changes>
-            <efac:Change>
-              <efbc:ChangeDescription languageID="POR">Reason</efbc:ChangeDescription>
-              <efbc:ProcurementDocumentsChangeDate>2023-08-25+01:00</efbc:ProcurementDocumentsChangeDate>
-              <efbc:ProcurementDocumentsChangeIndicator>false</efbc:ProcurementDocumentsChangeIndicator>
-              <efac:ChangedSection>
-                <efbc:ChangedSectionIdentifier>PROCEDURE</efbc:ChangedSectionIdentifier>
-              </efac:ChangedSection>
-            </efac:Change>
-          </efac:Changes> -->
-          
-
         </efext:EformsExtension>
       </ext:ExtensionContent>
     </ext:UBLExtension>
   </ext:UBLExtensions>
-
-
-  <!-- 02 -> General info about the form!!! -->
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>  <!-- nota: os valores destes parametros copiei de um xml gerado no eform -->
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
   <cbc:ID schemeName="notice-id"></cbc:ID>  <!-- Preenchido automaticamente-->  <!-- Como vai ser gerado este ID? -->
   <cbc:IssueDate></cbc:IssueDate>  <!-- Preenchido automaticamente-->  <!-- Data e hora que o formulário é submetido -->
   <cbc:IssueTime></cbc:IssueTime>  <!-- Preenchido automaticamente-->
   <cbc:VersionID>02</cbc:VersionID>
-  <!-- Dispatch Date -->
   <cbc:RequestedPublicationDate>2023-08-25+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
-
-  <!-- Procedure > Purpose > Legal basis -->
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
-
-  <!-- Possiveis atributos relacionados ao modelo de formulario
-  e que devem ser preenchidos automaticamente ao escolher o formulario
-  a ser submetido -->
-  <!-- Notice Type (e.g. pin-tran) and Form Type (e.g. planning) -->
   <cbc:NoticeTypeCode listName="planning">pin-tran</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
-
-  <!-- 03 ->  <cac:ContractingParty> -->
-  <!-- Buyer (0001) -->
   <cac:ContractingParty>
     <cbc:BuyerProfileURI>https://www.google.com</cbc:BuyerProfileURI>
-
     <cac:ContractingPartyType>
       <cbc:PartyTypeCode listName="buyer-legal-type">ra</cbc:PartyTypeCode>
     </cac:ContractingPartyType>
-
     <cac:ContractingPartyType>
       <cbc:PartyTypeCode listName="buyer-contracting-type">not-cont-ent</cbc:PartyTypeCode>
     </cac:ContractingPartyType>
-
     <cac:ContractingActivity>
       <cbc:ActivityTypeCode listName="authority-activity">rcr</cbc:ActivityTypeCode>
     </cac:ContractingActivity>
-
     <cac:Party>
       <cac:PartyIdentification>
         <cbc:ID schemeName="organization">ORG-0003</cbc:ID>        <!-- colocar neste formato em Outsystems-->
       </cac:PartyIdentification>
-
-      <!-- Este Service Provider deve estar mencionado acima ou nao existir -->
       <cac:ServiceProviderParty>
         <cbc:ServiceTypeCode listName="service-provider-type">ted-esen</cbc:ServiceTypeCode>
         <cac:Party>
@@ -272,75 +161,42 @@ efbc > eForms specific extension basic components
           </cac:PartyIdentification>
         </cac:Party>
       </cac:ServiceProviderParty>
-      <!-- CHECK -->
-
     </cac:Party>
   </cac:ContractingParty>
-  <!-- CHECK!!! -->
-
-  <!-- Problem figured out -->
   <cac:TenderingTerms>
-    <!-- BT-09(a)-Procedure -->
     <cac:ProcurementLegislationDocumentReference>
       <cbc:ID schemeName="CrossBorderLaw">Test Code</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Descriptoin in portugues</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
-
-    <!-- Procedure > Purpose > Other legal basis with an identifier (0001) -->
     <cac:ProcurementLegislationDocumentReference>
-      <!-- Legal basis of the procedure (ELI - CELEX) -->
       <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
-      <!-- Legal basis of the procedure (description) -->
       <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
-
-    <!-- Procedure > Purpose > Other legal basis without a known identifier (0001) -->
     <cac:ProcurementLegislationDocumentReference>
-      <!-- Legal basis -->
       <cbc:ID schemeName='LocalLegalBasis'>Id Qualquer</cbc:ID>
-      <!-- Legal basis -->
       <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
-
   </cac:TenderingTerms>
-
-  <!-- 04 ->  <cac:TenderingProcess> -->
   <cac:TenderingProcess>
-    <!-- Procedure Type -->
     <cbc:ProcedureCode listName="procurement-procedure-type">neg-wo-call</cbc:ProcedureCode>
     <cac:ProcessJustification>
       <cbc:ProcessReasonCode listName="direct-award-justification">additional</cbc:ProcessReasonCode>
     </cac:ProcessJustification>
   </cac:TenderingProcess>
-
-  <!-- 05 -> <cac:ProcurementProject> -->
   <cac:ProcurementProject>
     <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
     <cbc:Name languageID="POR">Public road transport services</cbc:Name>
     <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
     <cbc:Note languageID="POR">Some additional information on the procurement ... blablabla</cbc:Note>
-
     <cac:ProcurementAdditionalType>
       <cbc:ProcurementTypeCode listName="transport-service">other</cbc:ProcurementTypeCode>
     </cac:ProcurementAdditionalType>
-
     <cac:MainCommodityClassification>      <!-- Foi eliminado um dos ItemClassificationCode-->
       <cbc:ItemClassificationCode listName="cpv">03111900</cbc:ItemClassificationCode>
-
-      <!-- ItemClassificationCode 2 in OutSystems belongs to ProcurementProject
-            inside ProcurementProjectLot -->
     </cac:MainCommodityClassification>
-
-    <!-- Description - non existent in T01 eForms
-          AddittionalCommodityClassification - non existent in T01 eForms
-          to be removed in the OutSystems plataform -->
-
   </cac:ProcurementProject>
-
-  <!-- 06 -> <cac:ProcurementProjectLot> -->
   <cac:ProcurementProjectLot>
     <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
-
     <cac:TenderingTerms>
       <cac:AdditionalInformationParty>
         <cac:PartyIdentification>
@@ -348,7 +204,6 @@ efbc > eForms specific extension basic components
         </cac:PartyIdentification>
       </cac:AdditionalInformationParty>
     </cac:TenderingTerms>
-
     <cac:ProcurementProject>
       <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
       <cbc:Name languageID="POR">Serviço público de transportes de passageiros de Águeda</cbc:Name>
@@ -377,12 +232,11 @@ efbc > eForms specific extension basic components
         </cac:Address>
       </cac:RealizedLocation>
       <cac:PlannedPeriod>
-        <!-- <cbc:StartDate>2023-08-18+01:00</cbc:StartDate> -->
-        <!-- <cbc:EndDate>2023-08-19+01:00</cbc:EndDate> -->
-        <!-- <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure>  -->
+        <cbc:StartDate>2023-08-18+01:00</cbc:StartDate>
+        <cbc:EndDate>2023-08-19+01:00</cbc:EndDate>
+        <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure> 
         <cbc:DescriptionCode listName="timeperiod">UNKNOWN</cbc:DescriptionCode>
       </cac:PlannedPeriod>
     </cac:ProcurementProject>
   </cac:ProcurementProjectLot>
-
 </PriorInformationNotice>
