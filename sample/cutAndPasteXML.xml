@@ -13,112 +13,131 @@
       <ext:ExtensionContent>
         <efext:EformsExtension>
           <efac:NoticeSubType>
-            <cbc:SubTypeCode listName="notice-subtype">T01</cbc:SubTypeCode>
+            <cbc:SubTypeCode>T01</cbc:SubTypeCode>
           </efac:NoticeSubType>
           <efac:Organizations>
             <efac:Organization>
               <efbc:AcquiringCPBIndicator>false</efbc:AcquiringCPBIndicator>
               <efbc:AwardingCPBIndicator>false</efbc:AwardingCPBIndicator>
               <efac:Company>
-                <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
+                <cbc:WebsiteURI>http://www.testinho.com</cbc:WebsiteURI>
+                <!--    ADD THIS TO OUT SYSTEMS
                 <cac:PartyIdentification>
-                  <cbc:ID schemeName="organization">ORG-0003</cbc:ID>                  <!-- colocar neste formato em Outsystems-->
-                </cac:PartyIdentification>
+                  <cbc:ID schemeName="organization">ORG-0003</cbc:ID> Adicionar a logica para esta var
+                </cac:PartyIdentification> -->
                 <cac:PartyName>
-                  <cbc:Name languageID="POR">Município</cbc:Name>
+                  <cbc:Name languageID="POR">Organizacao</cbc:Name>
                 </cac:PartyName>
                 <cac:PostalAddress>
-                  <cbc:StreetName>Praça</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>lisboa</cbc:CityName>
-                  <cbc:PostalZone>7670-130</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">PT16D</cbc:CountrySubentityCode>
+                  <cbc:StreetName>endereco postal</cbc:StreetName>
+                  <cbc:AdditionalStreetName>Endereco Postal</cbc:AdditionalStreetName>
+                  <cbc:Department>Altos</cbc:Department>
+                  <cbc:CityName>Guaruja</cbc:CityName>
+                  <cbc:PostalZone>11462310</cbc:PostalZone>
+                  <cbc:CountrySubentityCode listName="nuts">PT112</cbc:CountrySubentityCode>
                   <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
+                    <cbc:Line>Endereco Postal</cbc:Line>
                   </cac:AddressLine>
                   <cac:Country>
                     <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
                   </cac:Country>
                 </cac:PostalAddress>
                 <cac:PartyLegalEntity>
-                  <cbc:CompanyID>PartyLegalEntityCID1234</cbc:CompanyID>                  <!-- Ver se existe algum formato -->
+                  <cbc:CompanyID>0001</cbc:CompanyID>
                 </cac:PartyLegalEntity>
                 <cac:Contact>
-                  <cbc:Name>Serviço de Contratação Pública</cbc:Name>
-                  <cbc:Telephone>+351 286555145</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
-                  <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
+                  <cbc:Name>Ponto de contacto</cbc:Name>
+                  <cbc:Telephone>5556677</cbc:Telephone>
+                  <cbc:Telefax>5558899</cbc:Telefax>
+                  <cbc:ElectronicMail>email@email.com</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:Company>
               <efac:TouchPoint>
-                <cbc:WebsiteURI>http://abc.europa.eu/</cbc:WebsiteURI>
+                <cbc:WebsiteURI>https://top.com</cbc:WebsiteURI>
                 <cac:PartyIdentification>
                   <cbc:ID schemeName="touchpoint">TPO-0001</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName>
-                  <cbc:Name languageID="POR">Department ABC</cbc:Name>
+                  <cbc:Name languageID="POR">TOP</cbc:Name>
                 </cac:PartyName>
                 <cac:PostalAddress>
-                  <cbc:StreetName>2, rue de l'Europe</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>SmallCity</cbc:CityName>
-                  <cbc:PostalZone>2345</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">AL011</cbc:CountrySubentityCode>
+                  <cbc:StreetName>endereco postal</cbc:StreetName>
+                  <cbc:AdditionalStreetName>endereco postal</cbc:AdditionalStreetName>
+                  <cbc:Department>TOP</cbc:Department>
+                  <cbc:CityName>guaruja</cbc:CityName>
+                  <cbc:PostalZone>555666444</cbc:PostalZone>
+                  <cbc:CountrySubentityCode listName="nuts">PT111</cbc:CountrySubentityCode>
                   <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
+                    <cbc:Line>endereco postal</cbc:Line>
                   </cac:AddressLine>
                   <cac:Country>
-                    <cbc:IdentificationCode listName="country">1A0</cbc:IdentificationCode>
+                    <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
                   </cac:Country>
                 </cac:PostalAddress>
                 <cac:Contact>
-                  <cbc:Name>Head of ABC Department</cbc:Name>
-                  <cbc:Telephone>+123 45678</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
-                  <cbc:ElectronicMail>abc@xyz.europa.eu</cbc:ElectronicMail>
+                  <cbc:Name>ponto de contato diferente</cbc:Name>
+                  <cbc:Telephone>444888777</cbc:Telephone>
+                  <cbc:Telefax>222333444</cbc:Telefax>
+                  <cbc:ElectronicMail>email@email.com</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:TouchPoint>
             </efac:Organization>
           </efac:Organizations>
-          <efac:Publication>
+          <!-- ADD THIS TO OUT SYSTEMS
+          <efac:Publication>  
             <efbc:NoticePublicationID schemeName="ojs-notice-id">12345678-2023</efbc:NoticePublicationID>
             <efbc:GazetteID schemeName="ojs-id">42/1987</efbc:GazetteID>
-            <efbc:PublicationDate>2023-08-18+01:00</efbc:PublicationDate>
-          </efac:Publication>
-          <efac:TenderSubcontractingRequirements>
-            <efbc:TenderSubcontractingRequirementsCode listName="subcontracting-indication">shar-subc</efbc:TenderSubcontractingRequirementsCode>
-          </efac:TenderSubcontractingRequirements>
+            <efbc:PublicationDate>202 3-08-18+01:00</efbc:PublicationDate>
+          </efac:Publication> -->
+          <efac:Changes>
+            <efac:ChangeReason>
+              <efbc:ReasonDescription>Mudanca Descricao</efbc:ReasonDescription>
+            </efac:ChangeReason>
+            <efac:Change>
+              <efac:ChangedSection>
+                <efbc:efac:ChangedSectionIdentifier>Secao a que se aplica a alteracao </efbc:efac:ChangedSectionIdentifier>
+              </efac:ChangedSection>
+              <efbc:ChangeDescription>Descricao da alteracao</efbc:ChangeDescription>
+              <efbc:ProcurementDocumentsChangeIndicator>true</efbc:ProcurementDocumentsChangeIndicator>
+            </efac:Change>
+          </efac:Changes>
         </efext:EformsExtension>
       </ext:ExtensionContent>
     </ext:UBLExtension>
   </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.3</cbc:UBLVersionID>  <!-- nota: os valores destes parametros copiei de um xml gerado no eform -->
-  <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id"></cbc:ID>  <!-- Preenchido automaticamente-->  <!-- Como vai ser gerado este ID? -->
-  <cbc:IssueDate></cbc:IssueDate>  <!-- Preenchido automaticamente-->  <!-- Data e hora que o formulário é submetido -->
-  <cbc:IssueTime></cbc:IssueTime>  <!-- Preenchido automaticamente-->
-  <cbc:VersionID>02</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-08-25+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
-  <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
+  <!--  ADD THIS TO OUT SYSTEMS
+  <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
+  <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID> 
+  <cbc:ID schemeName="notice-id"></cbc:ID>
+  <cbc:IssueDate></cbc:IssueDate>
+  <cbc:IssueTime></cbc:IssueTime>
+  <cbc:VersionID>02</cbc:VersionID> 
+  <cbc:RequestedPublicationDate>2023-08-25+01:00</cbc:RequestedPublicationDate> -->
+  <cbc:RegulatoryDomain>32009L0081</cbc:RegulatoryDomain>
+  <!-- ADD THIS TO OUT SYSTEMS
   <cbc:NoticeTypeCode listName="planning">pin-tran</cbc:NoticeTypeCode>
-  <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
+  <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode> -->
+  
   <cac:ContractingParty>
-    <cbc:BuyerProfileURI>https://www.google.com</cbc:BuyerProfileURI>
+    <cbc:BuyerProfileURI>https://www.luizcontes.com</cbc:BuyerProfileURI>
+    
     <cac:ContractingPartyType>
-      <cbc:PartyTypeCode listName="buyer-legal-type">ra</cbc:PartyTypeCode>
+      <cbc:PartyTypeCode listName='buyer-legal-type'>la</cbc:PartyTypeCode>
     </cac:ContractingPartyType>
+    
+    <!-- ADD THIS TO OUT SYSTEMS
     <cac:ContractingPartyType>
       <cbc:PartyTypeCode listName="buyer-contracting-type">not-cont-ent</cbc:PartyTypeCode>
-    </cac:ContractingPartyType>
+    </cac:ContractingPartyType> -->
+    
     <cac:ContractingActivity>
-      <cbc:ActivityTypeCode listName="authority-activity">rcr</cbc:ActivityTypeCode>
+      <cbc:ActivityTypeCode listName='authority-activity'>rcr</cbc:ActivityTypeCode>
     </cac:ContractingActivity>
     <cac:Party>
       <cac:PartyIdentification>
-        <cbc:ID schemeName="organization">ORG-0003</cbc:ID>        <!-- colocar neste formato em Outsystems-->
+        <cbc:ID>INCM - Teste</cbc:ID>
       </cac:PartyIdentification>
+      <!-- ADD THIS TO OUT SYSTEMS
       <cac:ServiceProviderParty>
         <cbc:ServiceTypeCode listName="service-provider-type">ted-esen</cbc:ServiceTypeCode>
         <cac:Party>
@@ -126,83 +145,112 @@
             <cbc:ID schemeName="organization">ORG-0002</cbc:ID>
           </cac:PartyIdentification>
         </cac:Party>
-      </cac:ServiceProviderParty>
+      </cac:ServiceProviderParty> -->
     </cac:Party>
   </cac:ContractingParty>
+  
   <cac:TenderingTerms>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="CrossBorderLaw">Test Code</cbc:ID>
-      <cbc:DocumentDescription languageID="POR">Descriptoin in portugues</cbc:DocumentDescription>
-    </cac:ProcurementLegislationDocumentReference>
-    <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
-      <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
-    </cac:ProcurementLegislationDocumentReference>
+    <!-- VERIFICAR OS ATRIBUTOS schemeName da tag <cbc:ID> -->
+    <ProcurementLegislationDocumentReference_BT09_a_Pro>
+      <cbc:ID>Base Juridica do procedimento 1</cbc:ID>
+      <cbc:DocumentDescription>Base Juridica do procedimento 1</cbc:DocumentDescription>
+    </ProcurementLegislationDocumentReference_BT09_a_Pro>
+
+    <ProcurementLegislationDocumentReference_BT09_a_Pro>
+      <cbc:ID>Base Juridica do procedimento 2</cbc:ID>
+      <cbc:DocumentDescription>Base Juridica do procedimento 2</cbc:DocumentDescription>
+    </ProcurementLegislationDocumentReference_BT09_a_Pro>
+
+    <!-- ADD THIS TO OUT SYSTEMS
     <cac:ProcurementLegislationDocumentReference>
       <cbc:ID schemeName='LocalLegalBasis'>Id Qualquer</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
-    </cac:ProcurementLegislationDocumentReference>
+    </cac:ProcurementLegislationDocumentReference> -->
   </cac:TenderingTerms>
+
   <cac:TenderingProcess>
-    <cbc:ProcedureCode listName="procurement-procedure-type">neg-wo-call</cbc:ProcedureCode>
+    <cbc:ProcedureCode listName='procurement-procedure-type'>comp-tend</cbc:ProcedureCode>
+    <!-- ADD THIS TO OUT SYSTEMS
     <cac:ProcessJustification>
       <cbc:ProcessReasonCode listName="direct-award-justification">additional</cbc:ProcessReasonCode>
-    </cac:ProcessJustification>
+    </cac:ProcessJustification> -->
   </cac:TenderingProcess>
+  
   <cac:ProcurementProject>
-    <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
-    <cbc:Name languageID="POR">Public road transport services</cbc:Name>
-    <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
-    <cbc:Note languageID="POR">Some additional information on the procurement ... blablabla</cbc:Note>
+    <cbc:ID>Base Juridica do procedimento 3</cbc:ID>
+    <cbc:Name>Base Juridica do procedimento 3</cbc:Name>
+    <cbc:ProcurementTypeCode listName='eforms-contract-nature'>works</cbc:ProcurementTypeCode>
+    <cbc:Note>Informacoes adicionais do procedimento</cbc:Note>
     <cac:ProcurementAdditionalType>
-      <cbc:ProcurementTypeCode listName="transport-service">other</cbc:ProcurementTypeCode>
+      <cbc:ProcurementTypeCode listName='eforms-contract-nature'>supplies</cbc:ProcurementTypeCode>
     </cac:ProcurementAdditionalType>
-    <cac:MainCommodityClassification>      <!-- Foi eliminado um dos ItemClassificationCode-->
-      <cbc:ItemClassificationCode listName="cpv">03111900</cbc:ItemClassificationCode>
+    <cac:MainCommodityClassification>
+      <cbc:ItemClassificationCode listName='cpv'>03111800</cbc:ItemClassificationCode>
     </cac:MainCommodityClassification>
+    <!-- Relembrar de ajustas as variaveis que carregam informacao sobre os atributos -->
+    <cac:AdditionalCommodityClassification>
+      <cbc:ItemClassificationCode listName='classification-type'>cpv</cbc:ItemClassificationCode>
+      <cbc:ItemClassificationCode listName='cpv'>03111800</cbc:ItemClassificationCode>
+    </cac:AdditionalCommodityClassification>
   </cac:ProcurementProject>
-  <cac:ProcurementProjectLot>
-    <cbc:ID schemeName="Lot">LOT-0001</cbc:ID>
+  <ProcurementProjectLot41>
+    <cbc:ID>0</cbc:ID>
+    <!-- ADD THIS TO OUT SYSTEMS
     <cac:TenderingTerms>
       <cac:AdditionalInformationParty>
         <cac:PartyIdentification>
-          <cbc:ID schemeName="organization">TPO-0001</cbc:ID>          <!-- colocar neste formato em Outsystems-->
+          <cbc:ID schemeName="organization">TPO-0001</cbc:ID>
         </cac:PartyIdentification>
       </cac:AdditionalInformationParty>
-    </cac:TenderingTerms>
+    </cac:TenderingTerms> -->
     <cac:ProcurementProject>
-      <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
-      <cbc:Name languageID="POR">Serviço público de transportes de passageiros de Águeda</cbc:Name>
-      <cbc:Description languageID="POR">Serviço público de transportes de passageiros de Águeda.</cbc:Description>
-      <cbc:ProcurementTypeCode listName="contract-nature">services</cbc:ProcurementTypeCode>
-      <cbc:EstimatedOverallContractQuantity unitCode="3C">2</cbc:EstimatedOverallContractQuantity>
+      <cbc:ID>lot</cbc:ID>
+      <cbc:Name>Titulo LOT</cbc:Name>
+      <!-- <cbc:Description languageID="POR">Serviço público de transportes de passageiros de Águeda.</cbc:Description> -->
+      <cbc:ProcurementTypeCode listName='eforms-contract-nature'>services</cbc:ProcurementTypeCode>
+      <EstimatedOverallContractQuantity>500</EstimatedOverallContractQuantity>
+      <!-- ADD THIS TO OUT SYSTEMS
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="contract-nature">works</cbc:ProcurementTypeCode>
       </cac:ProcurementAdditionalType>
       <cac:ProcurementAdditionalType>
         <cbc:ProcurementTypeCode listName="transporte-service">bus-s</cbc:ProcurementTypeCode>
-      </cac:ProcurementAdditionalType>
+      </cac:ProcurementAdditionalType> -->
       <cac:MainCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">50420000</cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName='classification-type'>cpv</cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName='cpv'>03111900</cbc:ItemClassificationCode>
       </cac:MainCommodityClassification>
       <cac:AdditionalCommodityClassification>
-        <cbc:ItemClassificationCode listName="cpv">98513300</cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName='classification-type'>cpv</cbc:ItemClassificationCode>
+        <cbc:ItemClassificationCode listName='cpv'>03111500</cbc:ItemClassificationCode>
       </cac:AdditionalCommodityClassification>
       <cac:RealizedLocation>
-        <cbc:Description languageID="POR">urbano/regional</cbc:Description>
+        <cbc:Description>Informacoes adicionais</cbc:Description>
         <cac:Address>
-          <cbc:CountrySubentityCode listName="nuts">AT125</cbc:CountrySubentityCode>
+          <!-- Informacao a mais em relacao ao documento validado
+          <cbc:StreetName>25 Rua Antônio Monteiro da Cruz</cbc:StreetName>
+          <cbc:AdditionalStreetName>25 Rua Antônio Monteiro da Cruz</cbc:AdditionalStreetName>
+          <cac:AddressLine>
+            <cbc:Line>25 Rua Antônio Monteiro da Cruz</cbc:Line>
+          </cac:AddressLine>
+          <cbc:CityName>Guaruja</cbc:CityName>
+          <cbc:PostalZone>11462-310</cbc:PostalZone> -->
+          <cbc:CountrySubentityCode listName="nuts">PT111</cbc:CountrySubentityCode>
           <cac:Country>
-            <cbc:IdentificationCode listName="country">BRA</cbc:IdentificationCode>
+            <cbc:IdentificationCode listName="country">PRT</cbc:IdentificationCode>
           </cac:Country>
+          <!-- Informacao a mais em relacao ao documento validado 
+            <cbc:Region listName='other-place-service'>anyw-eea</Region> -->
         </cac:Address>
       </cac:RealizedLocation>
-      <cac:PlannedPeriod>
-        <cbc:StartDate>2023-08-18+01:00</cbc:StartDate>
-        <cbc:EndDate>2023-08-19+01:00</cbc:EndDate>
-        <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure> 
-        <cbc:DescriptionCode listName="timeperiod">UNKNOWN</cbc:DescriptionCode>
-      </cac:PlannedPeriod>
+      <!-- Informacao a mais em relacao ao documento validado
+      <EstimatedOverallContractQuantity2>MAW</EstimatedOverallContractQuantity2> -->
+      <PlannedPeriod>
+        <StartDate>2023-08-31</StartDate>
+        <!-- ADD THIS TO OUT SYSTEMS <cbc:EndDate>2023-08-19+01:00</cbc:EndDate> -->
+        <DurationMeasure>60</DurationMeasure>
+        <!-- ADD THIS TO OUT SYSTEMS <cbc:DescriptionCode listName="timeperiod">UNKNOWN</cbc:DescriptionCode> -->
+      </PlannedPeriod>
     </cac:ProcurementProject>
-  </cac:ProcurementProjectLot>
+  </ProcurementProjectLot41>
 </PriorInformationNotice>

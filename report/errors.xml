@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <svrl:schematron-output>
-  <svrl:failed-assert id="P-0033" location="/pin:PriorInformationNotice/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:StrategicProcurement/efac:StrategicProcurementInformation/efac:ProcurementDetails[1]/efac:StrategicProcurementStatistics/efbc:StatisticsCode" test="@listName" role="ERROR">
+  <svrl:failed-assert id="P-0023" location="/pin:PriorInformationNotice/cac:TenderingProcess/cbc:ProcedureCode" test="@listName" role="ERROR">
     <svrl:text>
-			O atributo obrigatório listName está em falta no elemento efbc:StatisticsCode</svrl:text>
+			O atributo obrigatório listName está em falta no elemento cbc:ProcedureCode</svrl:text>
   </svrl:failed-assert>
 </svrl:schematron-output>

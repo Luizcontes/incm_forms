@@ -14,7 +14,7 @@
               <efac:Company>
                 <cbc:WebsiteURI>https://www.google.com</cbc:WebsiteURI>
                 <cac:PartyIdentification>
-                  <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
+                  <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
                 </cac:PartyIdentification>
                 <cac:PartyName>
                   <cbc:Name languageID="POR">Município</cbc:Name>
@@ -43,35 +43,6 @@
                   <cbc:ElectronicMail>atos@net.com</cbc:ElectronicMail>
                 </cac:Contact>
               </efac:Company>
-              <efac:TouchPoint>
-                <cbc:WebsiteURI>http://abc.europa.eu/</cbc:WebsiteURI>
-                <cac:PartyIdentification>
-                  <cbc:ID schemeName="touchpoint">TPO-0001</cbc:ID>
-                </cac:PartyIdentification>
-                <cac:PartyName>
-                  <cbc:Name languageID="POR">Department ABC</cbc:Name>
-                </cac:PartyName>
-                <cac:PostalAddress>
-                  <cbc:StreetName>2, rue de l'Europe</cbc:StreetName>
-                  <cbc:AdditionalStreetName>Beco</cbc:AdditionalStreetName>
-                  <cbc:Department>Sao Paulo</cbc:Department>
-                  <cbc:CityName>SmallCity</cbc:CityName>
-                  <cbc:PostalZone>2345</cbc:PostalZone>
-                  <cbc:CountrySubentityCode listName="nuts">AL011</cbc:CountrySubentityCode>
-                  <cac:AddressLine>
-                    <cbc:Line>22</cbc:Line>
-                  </cac:AddressLine>
-                  <cac:Country>
-                    <cbc:IdentificationCode listName="country">1A0</cbc:IdentificationCode>
-                  </cac:Country>
-                </cac:PostalAddress>
-                <cac:Contact>
-                  <cbc:Name>Head of ABC Department</cbc:Name>
-                  <cbc:Telephone>+123 45678</cbc:Telephone>
-                  <cbc:Telefax>+351 8193848585</cbc:Telefax>
-                  <cbc:ElectronicMail>abc@xyz.europa.eu</cbc:ElectronicMail>
-                </cac:Contact>
-              </efac:TouchPoint>
             </efac:Organization>
             <efac:Organization>
               <efac:Company>
@@ -122,11 +93,11 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">c9c1b752-9a8c-4ceb-9a04-d52b6033e950</cbc:ID>
-  <cbc:IssueDate>2023-08-23+01:00</cbc:IssueDate>
+  <cbc:ID schemeName="notice-id">ff4f8ed8-bba3-42e7-9729-a8cbbf5a795a</cbc:ID>
+  <cbc:IssueDate>2023-08-25+01:00</cbc:IssueDate>
   <cbc:IssueTime>14:00:00+01:00</cbc:IssueTime>
   <cbc:VersionID>02</cbc:VersionID>
-  <cbc:RequestedPublicationDate>2023-08-25+01:00</cbc:RequestedPublicationDate>
+  <cbc:RequestedPublicationDate>2023-08-27+01:00</cbc:RequestedPublicationDate>
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
   <cbc:NoticeTypeCode listName="planning">pin-tran</cbc:NoticeTypeCode>
   <cbc:NoticeLanguageCode>POR</cbc:NoticeLanguageCode>
@@ -143,7 +114,7 @@
     </cac:ContractingActivity>
     <cac:Party>
       <cac:PartyIdentification>
-        <cbc:ID schemeName="organization">ORG-0003</cbc:ID>
+        <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
       </cac:PartyIdentification>
       <cac:ServiceProviderParty>
         <cbc:ServiceTypeCode listName="service-provider-type">ted-esen</cbc:ServiceTypeCode>
@@ -157,15 +128,15 @@
   </cac:ContractingParty>
   <cac:TenderingTerms>
     <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="CrossBorderLaw">Test Code</cbc:ID>
+      <cbc:ID>Test Code</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Descriptoin in portugues</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
     <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
+      <cbc:ID schemeName="LocalLegalBasis">Id Qualquer</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
     <cac:ProcurementLegislationDocumentReference>
-      <cbc:ID schemeName="LocalLegalBasis">Id Qualquer</cbc:ID>
+      <cbc:ID schemeName="CrossBorderLaw">Id Qualquer</cbc:ID>
       <cbc:DocumentDescription languageID="POR">Testando campo</cbc:DocumentDescription>
     </cac:ProcurementLegislationDocumentReference>
   </cac:TenderingTerms>
@@ -192,7 +163,7 @@
     <cac:TenderingTerms>
       <cac:AdditionalInformationParty>
         <cac:PartyIdentification>
-          <cbc:ID schemeName="organization">TPO-0001</cbc:ID>
+          <cbc:ID schemeName="organization">ORG-0001</cbc:ID>
         </cac:PartyIdentification>
       </cac:AdditionalInformationParty>
     </cac:TenderingTerms>
@@ -217,7 +188,14 @@
       <cac:RealizedLocation>
         <cbc:Description languageID="POR">urbano/regional</cbc:Description>
         <cac:Address>
+          <cbc:StreetName>25 Rua Antônio Monteiro da Cruz</cbc:StreetName>
+          <cbc:AdditionalStreetName>25 Rua Antônio Monteiro da Cruz</cbc:AdditionalStreetName>
+          <cbc:CityName>Guaruja</cbc:CityName>
+          <cbc:PostalZone>11462-310</cbc:PostalZone>
           <cbc:CountrySubentityCode listName="nuts">AT125</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>25 Rua Antônio Monteiro da Cruz</cbc:Line>
+          </cac:AddressLine>
           <cac:Country>
             <cbc:IdentificationCode listName="country">BRA</cbc:IdentificationCode>
           </cac:Country>
