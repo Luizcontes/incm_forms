@@ -121,7 +121,7 @@
   </ext:UBLExtensions>
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>
   <cbc:CustomizationID>eforms-sdk-1.7</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id">e369be8d-ac0c-457b-9c83-8083f4973b08</cbc:ID>
+  <cbc:ID schemeName="notice-id">e0dde828-0210-4ae9-bce3-e5f21ca19584</cbc:ID>
   <cbc:ContractFolderID>b918f7ef-d777-456a-a0e3-e98c1c6caa45</cbc:ContractFolderID>
   <cbc:IssueDate>2023-10-13+01:00</cbc:IssueDate>
   <cbc:IssueTime>15:00:00+01:00</cbc:IssueTime>
