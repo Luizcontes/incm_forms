@@ -1,0 +1,4656 @@
+{
+  "fieldset": [
+    {
+      "id": "BT-718-notice",
+      "parentNodeId": "ND-Change",
+      "name": "Change Procurement Documents",
+      "btId": "BT-718",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efac:Change/efbc:ProcurementDocumentsChangeIndicator",
+      "xpathRelative": "efbc:ProcurementDocumentsChangeIndicator",
+      "xsdSequenceOrder": [
+        {
+          "efbc:ProcurementDocumentsChangeIndicator": 3
+        }
+      ],
+      "type": "indicator",
+      "legalType": "INDICATOR",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    }
+  ],
+  "input": [
+    {
+      "id": "BT-701-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Identifier",
+      "btId": "BT-701",
+      "xpathAbsolute": "/*/cbc:ID[@schemeName='notice-id']",
+      "xpathRelative": "cbc:ID[@schemeName='notice-id']",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ID": 6
+        }
+      ],
+      "type": "id",
+      "legalType": "IDENTIFIER",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^[a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-757-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Version",
+      "btId": "BT-757",
+      "xpathAbsolute": "/*/cbc:VersionID",
+      "xpathRelative": "cbc:VersionID",
+      "xsdSequenceOrder": [
+        {
+          "cbc:VersionID": 14
+        }
+      ],
+      "type": "id",
+      "legalType": "IDENTIFIER",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(0[1-9]|[1-9]\\d)$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-05(a)-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Dispatch Date",
+      "btId": "BT-05",
+      "xpathAbsolute": "/*/cbc:IssueDate",
+      "xpathRelative": "cbc:IssueDate",
+      "xsdSequenceOrder": [
+        {
+          "cbc:IssueDate": 10
+        }
+      ],
+      "type": "date",
+      "presetValue": "{NOW}",
+      "legalType": "DATE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(?:(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:(?:0[13578]|1[02]))-31|(?:(?:0[13-9]|1[0-2])-(?:29|30))))|(?:(?:(?:(?:(?:1[6-9]|[2-9]\\d)(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))-02-29))|(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:0[1-9])|(?:1[0-2]))-(?:0[1-9]|1\\d|2[0-8])))(Z|[-+]((0[0-9]|1[0-3]):([03]0|45)|14:00))$",
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "value": "{ND-Root} ${(BT-05(a)-notice < BT-738-notice) or not(BT-738-notice is present)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00005-0150"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-05(b)-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Dispatch Time",
+      "btId": "BT-05",
+      "xpathAbsolute": "/*/cbc:IssueTime",
+      "xpathRelative": "cbc:IssueTime",
+      "xsdSequenceOrder": [
+        {
+          "cbc:IssueTime": 11
+        }
+      ],
+      "type": "time",
+      "presetValue": "{NOW}",
+      "legalType": "DATE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(([01]\\d|2[0-3])((:[0-5]\\d){1,2}(\\.\\d+)?)?)(Z|[-+]((0[0-9]|1[0-3]):([03]0|45)|14:00))$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-738-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Preferred Publication Date",
+      "btId": "BT-738",
+      "xpathAbsolute": "/*/cbc:RequestedPublicationDate",
+      "xpathRelative": "cbc:RequestedPublicationDate",
+      "xsdSequenceOrder": [
+        {
+          "cbc:RequestedPublicationDate": 16
+        }
+      ],
+      "type": "date",
+      "legalType": "DATE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "pattern": {
+        "value": "^(?:(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:(?:0[13578]|1[02]))-31|(?:(?:0[13-9]|1[0-2])-(?:29|30))))|(?:(?:(?:(?:(?:1[6-9]|[2-9]\\d)(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))-02-29))|(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:0[1-9])|(?:1[0-2]))-(?:0[1-9]|1\\d|2[0-8])))(Z|[-+]((0[0-9]|1[0-3]):([03]0|45)|14:00))$",
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-Root} ${BT-738-notice is present}",
+            "value": "{ND-Root} ${((BT-738-notice - BT-05(a)-notice) < P60D) and ((BT-738-notice - BT-05(a)-notice) >= P2D)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00738-0053"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OPT-001-notice",
+      "parentNodeId": "ND-Root",
+      "name": "UBL version ID (UBL)",
+      "btId": "OPT-001",
+      "xpathAbsolute": "/*/cbc:UBLVersionID",
+      "xpathRelative": "cbc:UBLVersionID",
+      "xsdSequenceOrder": [
+        {
+          "cbc:UBLVersionID": 2
+        }
+      ],
+      "type": "id",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^2\\.3$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPT-002-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Customization ID (UBL)",
+      "btId": "OPT-002",
+      "xpathAbsolute": "/*/cbc:CustomizationID",
+      "xpathRelative": "cbc:CustomizationID",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CustomizationID": 3
+        }
+      ],
+      "type": "id",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^eforms-sdk-\\d\\.\\d$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPP-010-notice",
+      "parentNodeId": "ND-Publication",
+      "name": "Notice Publication Number",
+      "btId": "OPP-010",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:NoticePublicationID[@schemeName='ojs-notice-id']",
+      "xpathRelative": "efbc:NoticePublicationID[@schemeName='ojs-notice-id']",
+      "xsdSequenceOrder": [
+        {
+          "efbc:NoticePublicationID": 1
+        }
+      ],
+      "type": "id",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(\\d{1,8})-(19|20)\\d\\d$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPP-011-notice",
+      "parentNodeId": "ND-Publication",
+      "name": "OJEU Identifier",
+      "btId": "OPP-011",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:GazetteID[@schemeName='ojs-id']",
+      "xpathRelative": "efbc:GazetteID[@schemeName='ojs-id']",
+      "xsdSequenceOrder": [
+        {
+          "efbc:GazetteID": 2
+        }
+      ],
+      "type": "id",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^[1-9]\\d{0,2}/(19|20)\\d\\d$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPP-012-notice",
+      "parentNodeId": "ND-Publication",
+      "name": "OJEU Publication Date",
+      "btId": "OPP-012",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Publication/efbc:PublicationDate",
+      "xpathRelative": "efbc:PublicationDate",
+      "xsdSequenceOrder": [
+        {
+          "efbc:PublicationDate": 3
+        }
+      ],
+      "type": "date",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(?:(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:(?:0[13578]|1[02]))-31|(?:(?:0[13-9]|1[0-2])-(?:29|30))))|(?:(?:(?:(?:(?:1[6-9]|[2-9]\\d)(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))-02-29))|(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:0[1-9])|(?:1[0-2]))-(?:0[1-9]|1\\d|2[0-8])))(Z|[-+]((0[0-9]|1[0-3]):([03]0|45)|14:00))$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-508-Procedure-Buyer",
+      "parentNodeId": "ND-ContractingParty",
+      "name": "Buyer Profile URL",
+      "btId": "BT-508",
+      "xpathAbsolute": "/*/cac:ContractingParty/cbc:BuyerProfileURI",
+      "xpathRelative": "cbc:BuyerProfileURI",
+      "xsdSequenceOrder": [
+        {
+          "cbc:BuyerProfileURI": 2
+        }
+      ],
+      "type": "url",
+      "legalType": "URL",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "38",
+              "39",
+              "40",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?)):(/){2})(www\\.)?([a-zA-Z0-9\\-]+\\.)+[a-zA-Z]{2,6}(\\W(.)*$|$)",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-01(c)-Procedure",
+      "parentNodeId": "ND-LocalLegalBasisWithID",
+      "name": "Procedure Legal Basis (ID)",
+      "btId": "BT-01",
+      "xpathAbsolute": "/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:ID[not(text()=('CrossBorderLaw','LocalLegalBasis'))]",
+      "xpathRelative": "cbc:ID[not(text()=('CrossBorderLaw','LocalLegalBasis'))]",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "id",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-22-Procedure",
+      "parentNodeId": "ND-ProcedureProcurementScope",
+      "name": "Internal Identifier",
+      "btId": "BT-22",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cbc:ID",
+      "xpathRelative": "cbc:ID",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "id",
+      "legalType": "TEXT",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-758-notice",
+      "parentNodeId": "ND-Changes",
+      "name": "Change Notice Version Identifier",
+      "btId": "BT-758",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efbc:ChangedNoticeIdentifier",
+      "xpathRelative": "efbc:ChangedNoticeIdentifier",
+      "xsdSequenceOrder": [
+        {
+          "efbc:ChangedNoticeIdentifier": 1
+        }
+      ],
+      "type": "id",
+      "legalType": "IDENTIFIER",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "pattern": {
+        "value": "^([a-f0-9]{8}-[a-f0-9]{4}-4[a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}-(0[1-9]|[1-9]\\d)|(\\d{1,8})-(19|20)\\d\\d)$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-13716-notice",
+      "parentNodeId": "ND-ChangedSection",
+      "name": "Change Previous Section Identifier",
+      "btId": "BT-13716",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efac:Change/efac:ChangedSection/efbc:ChangedSectionIdentifier",
+      "xpathRelative": "efbc:ChangedSectionIdentifier",
+      "xsdSequenceOrder": [
+        {
+          "efbc:ChangedSectionIdentifier": 1
+        }
+      ],
+      "type": "id",
+      "legalType": "IDENTIFIER",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(PROCEDURE|BUYER|RESULT|((PAR|LOT|GLO|RES|ORG)-\\d{4}))$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-719-notice",
+      "parentNodeId": "ND-Change",
+      "name": "Change Procurement Documents Date",
+      "btId": "BT-719",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efac:Change/efbc:ProcurementDocumentsChangeDate",
+      "xpathRelative": "efbc:ProcurementDocumentsChangeDate",
+      "xsdSequenceOrder": [
+        {
+          "efbc:ProcurementDocumentsChangeDate": 2
+        }
+      ],
+      "type": "date",
+      "legalType": "DATE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^(?:(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:(?:0[13578]|1[02]))-31|(?:(?:0[13-9]|1[0-2])-(?:29|30))))|(?:(?:(?:(?:(?:1[6-9]|[2-9]\\d)(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))-02-29))|(?:(?:(?:1[6-9]|[2-9]\\d)\\d{2})-(?:(?:0[1-9])|(?:1[0-2]))-(?:0[1-9]|1\\d|2[0-8])))(Z|[-+]((0[0-9]|1[0-3]):([03]0|45)|14:00))$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPT-200-Organization-Company",
+      "parentNodeId": "ND-Company",
+      "name": "Organisation Technical Identifier",
+      "btId": "OPT-200",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyIdentification/cbc:ID",
+      "xpathRelative": "cac:PartyIdentification/cbc:ID",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyIdentification": 4
+        },
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "id",
+      "idScheme": "ORG",
+      "schemeName": "organization",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^ORG-\\d{4}$",
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "value": "{ND-Company} ${OPT-200-Organization-Company is unique in /OPT-200-Organization-Company}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00200-0100"
+          },
+          {
+            "condition": "{ND-Company} ${OPT-200-Organization-Company in OPT-300-Tenderer}",
+            "value": "{ND-Company} ${not(OPT-201-Organization-TouchPoint is present)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00200-0101"
+          },
+          {
+            "condition": "{ND-Company} ${OPT-200-Organization-Company in OPT-301-Tenderer-SubCont}",
+            "value": "{ND-Company} ${not(OPT-201-Organization-TouchPoint is present)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00200-0102"
+          },
+          {
+            "value": "{ND-Company} ${((OPT-200-Organization-Company in OPT-300-Contract-Signatory) or (OPT-200-Organization-Company in OPT-300-Procedure-Buyer) or (OPT-200-Organization-Company in OPT-300-Procedure-SProvider) or (OPT-200-Organization-Company in OPT-300-Tenderer) or (OPT-200-Organization-Company in OPT-301-Lot-AddInfo) or (OPT-200-Organization-Company in OPT-301-Lot-DocProvider) or (OPT-200-Organization-Company in OPT-301-Lot-EmployLegis) or (OPT-200-Organization-Company in OPT-301-Lot-EnvironLegis) or (OPT-200-Organization-Company in OPT-301-Lot-FiscalLegis) or (OPT-200-Organization-Company in OPT-301-Lot-Mediator) or (OPT-200-Organization-Company in OPT-301-Lot-ReviewInfo) or (OPT-200-Organization-Company in OPT-301-Lot-ReviewOrg) or (OPT-200-Organization-Company in OPT-301-Lot-TenderEval) or (OPT-200-Organization-Company in OPT-301-Lot-TenderReceipt) or (OPT-200-Organization-Company in OPT-301-LotResult-Financing) or (OPT-200-Organization-Company in OPT-301-LotResult-Paying) or (OPT-200-Organization-Company in OPT-301-Part-AddInfo) or (OPT-200-Organization-Company in OPT-301-Part-DocProvider) or (OPT-200-Organization-Company in OPT-301-Part-EmployLegis) or (OPT-200-Organization-Company in OPT-301-Part-EnvironLegis) or (OPT-200-Organization-Company in OPT-301-Part-FiscalLegis) or (OPT-200-Organization-Company in OPT-301-Part-Mediator) or (OPT-200-Organization-Company in OPT-301-Part-ReviewInfo) or (OPT-200-Organization-Company in OPT-301-Part-ReviewOrg) or (OPT-200-Organization-Company in OPT-301-Part-TenderEval) or (OPT-200-Organization-Company in OPT-301-Part-TenderReceipt) or (OPT-200-Organization-Company in OPT-301-ReviewBody) or (OPT-200-Organization-Company in OPT-301-ReviewReq) or (OPT-200-Organization-Company in OPT-301-Tenderer-MainCont) or (OPT-200-Organization-Company in OPT-301-Tenderer-SubCont))}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00200-0103"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-501-Organization-Company",
+      "parentNodeId": "ND-Company",
+      "name": "Organisation Identifier",
+      "btId": "BT-501",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyLegalEntity/cbc:CompanyID",
+      "xpathRelative": "cac:PartyLegalEntity/cbc:CompanyID",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyLegalEntity": 8
+        },
+        {
+          "cbc:CompanyID": 3
+        }
+      ],
+      "type": "id",
+      "legalType": "IDENTIFIER",
+      "repeatable": {
+        "value": true,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "4",
+              "5",
+              "7",
+              "8",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "19",
+              "20",
+              "21",
+              "23",
+              "24",
+              "29",
+              "30",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-505-Organization-Company",
+      "parentNodeId": "ND-Company",
+      "name": "Organisation Internet Address",
+      "btId": "BT-505",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cbc:WebsiteURI",
+      "xpathRelative": "cbc:WebsiteURI",
+      "xsdSequenceOrder": [
+        {
+          "cbc:WebsiteURI": 1
+        }
+      ],
+      "type": "url",
+      "legalType": "URL",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?)):(/){2})(www\\.)?([a-zA-Z0-9\\-]+\\.)+[a-zA-Z]{2,6}(\\W(.)*$|$)",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-509-Organization-Company",
+      "parentNodeId": "ND-Company",
+      "name": "Organisation eDelivery Gateway",
+      "btId": "BT-509",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cbc:EndpointID",
+      "xpathRelative": "cbc:EndpointID",
+      "xsdSequenceOrder": [
+        {
+          "cbc:EndpointID": 2
+        }
+      ],
+      "type": "url",
+      "legalType": "URL",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?)):(/){2})(www\\.)?([a-zA-Z0-9\\-]+\\.)+[a-zA-Z]{2,6}(\\W(.)*$|$)",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-506-Organization-Company",
+      "parentNodeId": "ND-CompanyContact",
+      "name": "Organisation Contact Email Address",
+      "btId": "BT-506",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:ElectronicMail",
+      "xpathRelative": "cbc:ElectronicMail",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ElectronicMail": 8
+        }
+      ],
+      "type": "email",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,63}$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-503-Organization-Company",
+      "parentNodeId": "ND-CompanyContact",
+      "name": "Organisation Contact Telephone Number",
+      "btId": "BT-503",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:Telephone",
+      "xpathRelative": "cbc:Telephone",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Telephone": 6
+        }
+      ],
+      "type": "phone",
+      "legalType": "TEXT",
+      "maxLength": 30,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((\\(\\+?[0-9]+\\))|\\+?[0-9]+)( - |-| )?(((\\(\\d+\\))|\\d+)( - |-| )?)*(\\d+)( )?$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-739-Organization-Company",
+      "parentNodeId": "ND-CompanyContact",
+      "name": "Organisation Contact Fax",
+      "btId": "BT-739",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:Telefax",
+      "xpathRelative": "cbc:Telefax",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Telefax": 7
+        }
+      ],
+      "type": "phone",
+      "legalType": "TEXT",
+      "maxLength": 30,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((\\(\\+?[0-9]+\\))|\\+?[0-9]+)( - |-| )?(((\\(\\d+\\))|\\d+)( - |-| )?)*(\\d+)( )?$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPT-201-Organization-TouchPoint",
+      "parentNodeId": "ND-Touchpoint",
+      "name": "TouchPoint Technical Identifier",
+      "btId": "OPT-201",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PartyIdentification/cbc:ID",
+      "xpathRelative": "cac:PartyIdentification/cbc:ID",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyIdentification": 3
+        },
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "id",
+      "idScheme": "TPO",
+      "schemeName": "touchpoint",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^TPO-\\d{4}$",
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{OPT-201-Organization-TouchPoint} ${OPT-201-Organization-TouchPoint is present}",
+            "value": "{OPT-201-Organization-TouchPoint} ${OPT-201-Organization-TouchPoint is unique in /OPT-201-Organization-TouchPoint}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00201-0100"
+          },
+          {
+            "condition": "{ND-Organization} ${OPT-201-Organization-TouchPoint is present}",
+            "value": "{ND-Organization} ${((OPT-201-Organization-TouchPoint in OPT-301-Lot-AddInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-DocProvider) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-EmployLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-EnvironLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-FiscalLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-Mediator) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-ReviewInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-ReviewOrg) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-TenderEval) or (OPT-201-Organization-TouchPoint in OPT-301-Lot-TenderReceipt) or (OPT-201-Organization-TouchPoint in OPT-301-Part-AddInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Part-DocProvider) or (OPT-201-Organization-TouchPoint in OPT-301-Part-EmployLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Part-EnvironLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Part-FiscalLegis) or (OPT-201-Organization-TouchPoint in OPT-301-Part-Mediator) or (OPT-201-Organization-TouchPoint in OPT-301-Part-ReviewInfo) or (OPT-201-Organization-TouchPoint in OPT-301-Part-ReviewOrg) or (OPT-201-Organization-TouchPoint in OPT-301-Part-TenderEval) or (OPT-201-Organization-TouchPoint in OPT-301-Part-TenderReceipt) or (OPT-201-Organization-TouchPoint in OPT-301-ReviewBody) or (OPT-201-Organization-TouchPoint in OPT-301-ReviewReq))}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00201-0101"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-505-Organization-TouchPoint",
+      "parentNodeId": "ND-Touchpoint",
+      "name": "Internet Address",
+      "btId": "BT-505",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cbc:WebsiteURI",
+      "xpathRelative": "cbc:WebsiteURI",
+      "xsdSequenceOrder": [
+        {
+          "cbc:WebsiteURI": 1
+        }
+      ],
+      "type": "url",
+      "legalType": "URL",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?)):(/){2})(www\\.)?([a-zA-Z0-9\\-]+\\.)+[a-zA-Z]{2,6}(\\W(.)*$|$)",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-509-Organization-TouchPoint",
+      "parentNodeId": "ND-Touchpoint",
+      "name": "eDelivery Gateway",
+      "btId": "BT-509",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cbc:EndpointID",
+      "xpathRelative": "cbc:EndpointID",
+      "xsdSequenceOrder": [
+        {
+          "cbc:EndpointID": 2
+        }
+      ],
+      "type": "url",
+      "legalType": "URL",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((((H|h)(T|t)|(F|f))(T|t)(P|p)((S|s)?)):(/){2})(www\\.)?([a-zA-Z0-9\\-]+\\.)+[a-zA-Z]{2,6}(\\W(.)*$|$)",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-506-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointContact",
+      "name": "Contact Email Address",
+      "btId": "BT-506",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:Contact/cbc:ElectronicMail",
+      "xpathRelative": "cbc:ElectronicMail",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ElectronicMail": 8
+        }
+      ],
+      "type": "email",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^[a-zA-Z0-9][a-zA-Z0-9._%+-]*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,63}$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-503-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointContact",
+      "name": "Contact Telephone Number",
+      "btId": "BT-503",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:Contact/cbc:Telephone",
+      "xpathRelative": "cbc:Telephone",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Telephone": 6
+        }
+      ],
+      "type": "phone",
+      "legalType": "TEXT",
+      "maxLength": 30,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((\\(\\+?[0-9]+\\))|\\+?[0-9]+)( - |-| )?(((\\(\\d+\\))|\\d+)( - |-| )?)*(\\d+)( )?$",
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-739-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointContact",
+      "name": "Contact Fax",
+      "btId": "BT-739",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:Contact/cbc:Telefax",
+      "xpathRelative": "cbc:Telefax",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Telefax": 7
+        }
+      ],
+      "type": "phone",
+      "legalType": "TEXT",
+      "maxLength": 30,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^((\\(\\+?[0-9]+\\))|\\+?[0-9]+)( - |-| )?(((\\(\\d+\\))|\\d+)( - |-| )?)*(\\d+)( )?$",
+        "severity": "ERROR"
+      }
+    }
+  ],
+  "select": [
+    {
+      "id": "BT-02-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Type",
+      "btId": "BT-02",
+      "xpathAbsolute": "/*/cbc:NoticeTypeCode",
+      "xpathRelative": "cbc:NoticeTypeCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:NoticeTypeCode": 19
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "notice-type",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "value": "{ND-Root} ${((BT-01-notice == '32014L0023') and (BT-02-notice in ('pin-cfc-social','cn-standard','veat','can-standard','can-social','can-modif'))) or not(BT-01-notice == '32014L0023')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0100"
+          },
+          {
+            "value": "{ND-Root} ${((OPP-070-notice in ('14','19','28','32','35','40') or (OPP-070-notice == 'E5' and BT-01-notice == '32014L0023')) and not(BT-531-Procedure == 'supplies') and not(BT-531-Lot == 'supplies') and not(BT-531-Part == 'supplies')) or not(OPP-070-notice in ('14','19','28','32','35','40') or (OPP-070-notice == 'E5' and BT-01-notice == '32014L0023'))}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0101"
+          },
+          {
+            "value": "{ND-Root} ${((OPP-070-notice in ('1','4','7','10','12','16','20','23','25','29','33','36','38') or (OPP-070-notice == 'E5' and BT-01-notice == '32014L0024')) and not(BT-02-notice == 'subco')) or not(OPP-070-notice in ('1','4','7','10','12','16','20','23','25','29','33','36','38') or (OPP-070-notice == 'E5' and BT-01-notice == '32014L0024'))}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0102"
+          },
+          {
+            "value": "{ND-Root} ${((BT-03-notice == 'bri') and (BT-02-notice in (bri))) or not(BT-03-notice == 'bri')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0103"
+          },
+          {
+            "value": "{ND-Root} ${((BT-03-notice == 'competition') and (BT-02-notice in (competition))) or not(BT-03-notice == 'competition')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0105"
+          },
+          {
+            "value": "{ND-Root} ${((BT-03-notice == 'cont-modif') and (BT-02-notice in (cont-modif))) or not(BT-03-notice == 'cont-modif')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0106"
+          },
+          {
+            "value": "{ND-Root} ${((BT-03-notice == 'dir-awa-pre') and (BT-02-notice in (dir-awa-pre))) or not(BT-03-notice == 'dir-awa-pre')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0107"
+          },
+          {
+            "value": "{ND-Root} ${((BT-03-notice == 'planning') and (BT-02-notice in (planning))) or not(BT-03-notice == 'planning')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0108"
+          },
+          {
+            "value": "{ND-Root} ${((BT-03-notice == 'result') and (BT-02-notice in (result))) or not(BT-03-notice == 'result')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00002-0109"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-03-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Form Type",
+      "btId": "BT-03",
+      "xpathAbsolute": "/*/cbc:NoticeTypeCode/@listName",
+      "xpathRelative": "cbc:NoticeTypeCode/@listName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:NoticeTypeCode": 19
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "form-type",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-702(a)-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Official Language",
+      "btId": "BT-702",
+      "xpathAbsolute": "/*/cbc:NoticeLanguageCode",
+      "xpathRelative": "cbc:NoticeLanguageCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:NoticeLanguageCode": 21
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eu-official-language",
+          "type": "flat",
+          "parentId": "language"
+        },
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-Root} ${BT-702(b)-notice is present}",
+            "value": "{ND-Root} ${not(BT-702(a)-notice in BT-702(b)-notice)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00702-0150"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-702(b)-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Notice Official Language",
+      "btId": "BT-702",
+      "xpathAbsolute": "/*/cac:AdditionalNoticeLanguage/cbc:ID",
+      "xpathRelative": "cac:AdditionalNoticeLanguage/cbc:ID",
+      "xsdSequenceOrder": [
+        {
+          "cac:AdditionalNoticeLanguage": 22
+        },
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": true,
+        "severity": "ERROR"
+      },
+      "codeList": {
+        "value": {
+          "id": "eu-official-language",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{BT-702(b)-notice} ${BT-702(b)-notice is present}",
+            "value": "{BT-702(b)-notice} ${BT-702(b)-notice is unique in /BT-702(b)-notice}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00702-0151"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OPP-070-notice",
+      "parentNodeId": "ND-RootExtension",
+      "name": "Notice Subtype",
+      "btId": "OPP-070",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:NoticeSubType/cbc:SubTypeCode",
+      "xpathRelative": "efac:NoticeSubType/cbc:SubTypeCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:SubTypeCode": 1
+        }
+      ],
+      "type": "code",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "notice-subtype",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'brin-ecs') and (OPP-070-notice in (brin-ecs))) or not(BT-02-notice == 'brin-ecs')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0100"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'brin-eeig') and (OPP-070-notice in (brin-eeig))) or not(BT-02-notice == 'brin-eeig')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0101"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'can-desg') and (OPP-070-notice in (can-desg))) or not(BT-02-notice == 'can-desg')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0102"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'can-modif') and (OPP-070-notice in (can-modif))) or not(BT-02-notice == 'can-modif')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0103"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'can-social') and (OPP-070-notice in (can-social))) or not(BT-02-notice == 'can-social')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0104"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'can-standard') and (OPP-070-notice in (can-standard))) or not(BT-02-notice == 'can-standard')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0105"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'can-tran') and (OPP-070-notice in (can-tran))) or not(BT-02-notice == 'can-tran')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0106"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'cn-desg') and (OPP-070-notice in (cn-desg))) or not(BT-02-notice == 'cn-desg')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0107"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'cn-social') and (OPP-070-notice in (cn-social))) or not(BT-02-notice == 'cn-social')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0108"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'cn-standard') and (OPP-070-notice in (cn-standard))) or not(BT-02-notice == 'cn-standard')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0109"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'pin-buyer') and (OPP-070-notice in (pin-buyer))) or not(BT-02-notice == 'pin-buyer')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0111"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'pin-cfc-social') and (OPP-070-notice in (pin-cfc-social))) or not(BT-02-notice == 'pin-cfc-social')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0112"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'pin-cfc-standard') and (OPP-070-notice in (pin-cfc-standard))) or not(BT-02-notice == 'pin-cfc-standard')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0113"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'pin-only') and (OPP-070-notice in (pin-only))) or not(BT-02-notice == 'pin-only')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0114"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'pin-rtl') and (OPP-070-notice in (pin-rtl))) or not(BT-02-notice == 'pin-rtl')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0115"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'pin-tran') and (OPP-070-notice in (pin-tran))) or not(BT-02-notice == 'pin-tran')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0116"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'qu-sy') and (OPP-070-notice in (qu-sy))) or not(BT-02-notice == 'qu-sy')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0117"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'subco') and (OPP-070-notice in (subco))) or not(BT-02-notice == 'subco')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0118"
+          },
+          {
+            "value": "{ND-RootExtension} ${((BT-02-notice == 'veat') and (OPP-070-notice in (veat))) or not(BT-02-notice == 'veat')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPP-00070-0119"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OPT-300-Procedure-Buyer",
+      "parentNodeId": "ND-ServiceProvider",
+      "name": "Buyer Technical Identifier Reference",
+      "btId": "OPT-300",
+      "xpathAbsolute": "/*/cac:ContractingParty/cac:Party/cac:PartyIdentification/cbc:ID",
+      "xpathRelative": "cac:PartyIdentification/cbc:ID",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyIdentification": 8
+        },
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "id-ref",
+      "idSchemes": [
+        "ORG"
+      ],
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-Root} ${OPT-300-Procedure-Buyer is present}",
+            "value": "{ND-Root} ${every text:$buyer in OPT-300-Procedure-Buyer satisfies ($buyer in /OPT-200-Organization-Company)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00300-0250"
+          },
+          {
+            "value": "{ND-Root} ${every text:$sps in OPT-300-Procedure-SProvider satisfies $sps not in OPT-300-Procedure-Buyer}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00300-0254"
+          },
+          {
+            "value": "{ND-Root} ${(every text:$tenderer in OPT-300-Tenderer satisfies $tenderer not in OPT-300-Procedure-Buyer) and (every text:$subcont in OPT-301-Tenderer-SubCont satisfies $subcont not in OPT-300-Procedure-Buyer)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00300-0255"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-11-Procedure-Buyer",
+      "parentNodeId": "ND-ContractingParty",
+      "name": "Buyer Legal Type",
+      "btId": "BT-11",
+      "xpathAbsolute": "/*/cac:ContractingParty/cac:ContractingPartyType/cbc:PartyTypeCode[@listName='buyer-legal-type']",
+      "xpathRelative": "cac:ContractingPartyType/cbc:PartyTypeCode[@listName='buyer-legal-type']",
+      "xsdSequenceOrder": [
+        {
+          "cac:ContractingPartyType": 3
+        },
+        {
+          "cbc:PartyTypeCode": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "38",
+              "39",
+              "40",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "4",
+              "7",
+              "10",
+              "14",
+              "16",
+              "19",
+              "23",
+              "29",
+              "32",
+              "35",
+              "36",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-buyer-legal-type",
+          "type": "flat",
+          "parentId": "buyer-legal-type"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-10-Procedure-Buyer",
+      "parentNodeId": "ND-ContractingParty",
+      "name": "Activity Authority",
+      "btId": "BT-10",
+      "xpathAbsolute": "/*/cac:ContractingParty/cac:ContractingActivity/cbc:ActivityTypeCode[@listName='authority-activity']",
+      "xpathRelative": "cac:ContractingActivity/cbc:ActivityTypeCode[@listName='authority-activity']",
+      "xsdSequenceOrder": [
+        {
+          "cac:ContractingActivity": 4
+        },
+        {
+          "cbc:ActivityTypeCode": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "22",
+              "38",
+              "39",
+              "40",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "4",
+              "7",
+              "10",
+              "16",
+              "23",
+              "29",
+              "36",
+              "CEI"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "authority-activity",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "OPT-300-Procedure-SProvider",
+      "parentNodeId": "ND-ProviderParty",
+      "name": "Service Provider Technical Identifier Reference",
+      "btId": "OPT-300",
+      "xpathAbsolute": "/*/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cac:Party/cac:PartyIdentification/cbc:ID",
+      "xpathRelative": "cac:PartyIdentification/cbc:ID",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyIdentification": 8
+        },
+        {
+          "cbc:ID": 2
+        }
+      ],
+      "type": "id-ref",
+      "idSchemes": [
+        "ORG"
+      ],
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "pattern": {
+        "value": "^ORG-\\d{4}$",
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-ServiceProvider} ${OPT-300-Procedure-SProvider is present}",
+            "value": "{ND-ServiceProvider} ${every text:$provider in OPT-300-Procedure-SProvider satisfies ($provider in /OPT-200-Organization-Company)}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-OPT-00300-0251"
+          }
+        ]
+      }
+    },
+    {
+      "id": "OPT-030-Procedure-SProvider",
+      "parentNodeId": "ND-ServiceProviderParty",
+      "name": "Provided Service Type",
+      "btId": "OPT-030",
+      "xpathAbsolute": "/*/cac:ContractingParty/cac:Party/cac:ServiceProviderParty/cbc:ServiceTypeCode",
+      "xpathRelative": "cbc:ServiceTypeCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ServiceTypeCode": 3
+        }
+      ],
+      "type": "code",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "organisation-role-service",
+          "type": "flat",
+          "parentId": "organisation-role"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-01-notice",
+      "parentNodeId": "ND-Root",
+      "name": "Procedure Legal Basis",
+      "btId": "BT-01",
+      "xpathAbsolute": "/*/cbc:RegulatoryDomain",
+      "xpathRelative": "cbc:RegulatoryDomain",
+      "xsdSequenceOrder": [
+        {
+          "cbc:RegulatoryDomain": 18
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-legal-basis",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-23-Procedure",
+      "parentNodeId": "ND-ProcedureProcurementScope",
+      "name": "Main Nature",
+      "btId": "BT-23",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cbc:ProcurementTypeCode",
+      "xpathRelative": "cbc:ProcurementTypeCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ProcurementTypeCode": 5
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-contract-nature",
+          "type": "flat",
+          "parentId": "contract-nature"
+        },
+        "severity": "ERROR"
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-ProcedureProcurementScope} ${(OPP-070-notice in ('14','19','28','32','35','40')) and (BT-23-Procedure is present)}",
+            "value": "{ND-ProcedureProcurementScope} ${BT-23-Procedure != 'supplies'}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00023-0201"
+          },
+          {
+            "condition": "{ND-ProcedureProcurementScope} ${(BT-23-Procedure is present) and (BT-531-Procedure is present)}",
+            "value": "{ND-ProcedureProcurementScope} ${BT-23-Procedure not in BT-531-Procedure}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00023-0202"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-531-Procedure",
+      "parentNodeId": "ND-ProcedureProcurementScope",
+      "name": "Additional Nature (different from Main)",
+      "btId": "BT-531",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[not(@listName='transport-service')]",
+      "xpathRelative": "cac:ProcurementAdditionalType/cbc:ProcurementTypeCode[not(@listName='transport-service')]",
+      "xsdSequenceOrder": [
+        {
+          "cac:ProcurementAdditionalType": 14
+        },
+        {
+          "cbc:ProcurementTypeCode": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": true,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-contract-nature",
+          "type": "flat",
+          "parentId": "contract-nature"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-26(m)-Procedure",
+      "parentNodeId": "ND-ProcedureMainClassificationCode",
+      "name": "Classification Type (e.g. CPV)",
+      "btId": "BT-26",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode/@listName",
+      "xpathRelative": "@listName",
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "classification-type",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-262-Procedure",
+      "parentNodeId": "ND-ProcedureMainClassification",
+      "name": "Main Classification Code",
+      "btId": "BT-262",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:MainCommodityClassification/cbc:ItemClassificationCode",
+      "xpathRelative": "cbc:ItemClassificationCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ItemClassificationCode": 5
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "cpv",
+          "type": "hierarchical"
+        },
+        "severity": "ERROR"
+      },
+      "inChangeNotice": {
+        "value": {
+          "canAdd": true,
+          "canModify": true,
+          "canRemove": true
+        },
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-ProcedureMainClassification} ${notice(BT-758-notice)/OPP-070-notice in ('10','11','CEI','12','13','14','15','16','17','18','19','E3','20','21','22','23','24','25','26','27','28','29','30','31','32','E4','T02','33','34','35','36','37','38','39','40','E5') and (notice(BT-758-notice)/BT-262-Procedure is present)}",
+            "value": {
+              "canModify": false
+            },
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "assert": {
+        "value": "{ND-Root} ${TRUE}",
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "condition": "{ND-ProcedureProcurementScope} ${(BT-23-Procedure == 'supplies') and (BT-262-Procedure is present)}",
+            "value": "{ND-ProcedureProcurementScope} ${starts-with(BT-262-Procedure,'0') or starts-with(BT-262-Procedure,'1') or starts-with(BT-262-Procedure,'2') or starts-with(BT-262-Procedure,'3') or starts-with(BT-262-Procedure,'40') or starts-with(BT-262-Procedure,'41') or starts-with(BT-262-Procedure,'42') or starts-with(BT-262-Procedure,'43') or starts-with(BT-262-Procedure,'44') or starts-with(BT-262-Procedure,'48')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00262-0202"
+          },
+          {
+            "condition": "{ND-ProcedureProcurementScope} ${(BT-23-Procedure == 'works') and (BT-262-Procedure is present)}",
+            "value": "{ND-ProcedureProcurementScope} ${starts-with(BT-262-Procedure,'45')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00262-0205"
+          },
+          {
+            "condition": "{ND-ProcedureProcurementScope} ${(BT-23-Procedure == 'services') and (BT-262-Procedure is present)}",
+            "value": "{ND-ProcedureProcurementScope} ${starts-with(BT-262-Procedure,'49') or starts-with(BT-262-Procedure,'5') or starts-with(BT-262-Procedure,'6') or starts-with(BT-262-Procedure,'7') or starts-with(BT-262-Procedure,'8') or starts-with(BT-262-Procedure,'9')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00262-0208"
+          },
+          {
+            "condition": "{ND-ProcedureProcurementScope} ${(OPP-070-notice in ('1','4','7','8','9','10','12','16','17','18','19','20','23','25','29','33','36','38')) and (BT-11-Procedure-Buyer in ('org-sub', 'org-sub-cga', 'org-sub-ra', 'org-sub-la')) and (BT-262-Procedure is present)}",
+            "value": "{ND-ProcedureProcurementScope} ${starts-with(BT-262-Procedure,'45')}",
+            "severity": "ERROR",
+            "message": "rule|text|BR-BT-00262-0211"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-26(a)-Procedure",
+      "parentNodeId": "ND-ProcedureAdditionalCommodityClassification",
+      "name": "Classification Type (e.g. CPV)",
+      "btId": "BT-26",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:AdditionalCommodityClassification/cbc:ItemClassificationCode/@listName",
+      "xpathRelative": "cbc:ItemClassificationCode/@listName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ItemClassificationCode": 5
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "classification-type",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-263-Procedure",
+      "parentNodeId": "ND-ProcedureAdditionalCommodityClassification",
+      "name": "Additional Classification Code",
+      "btId": "BT-263",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:AdditionalCommodityClassification/cbc:ItemClassificationCode",
+      "xpathRelative": "cbc:ItemClassificationCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ItemClassificationCode": 5
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "cpv",
+          "type": "hierarchical"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-5071-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Country Subdivision",
+      "btId": "BT-5071",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:CountrySubentityCode",
+      "xpathRelative": "cbc:CountrySubentityCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CountrySubentityCode": 23
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "nuts-lvl3",
+          "type": "flat",
+          "parentId": "nuts"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-5141-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Country Code",
+      "btId": "BT-5141",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cac:Country/cbc:IdentificationCode",
+      "xpathRelative": "cac:Country/cbc:IdentificationCode",
+      "xsdSequenceOrder": [
+        {
+          "cac:Country": 28
+        },
+        {
+          "cbc:IdentificationCode": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-country",
+          "type": "flat",
+          "parentId": "country"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-727-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Services Other",
+      "btId": "BT-727",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:Region",
+      "xpathRelative": "cbc:Region",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Region": 24
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "other-place-service",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-140-notice",
+      "parentNodeId": "ND-ChangeReason",
+      "name": "Change Reason Code",
+      "btId": "BT-140",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efac:ChangeReason/cbc:ReasonCode",
+      "xpathRelative": "cbc:ReasonCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:ReasonCode": 1
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "codeList": {
+        "value": {
+          "id": "change-corrig-justification",
+          "type": "flat"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-507-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Organisation Country Subdivision",
+      "btId": "BT-507",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:CountrySubentityCode",
+      "xpathRelative": "cbc:CountrySubentityCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CountrySubentityCode": 23
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "nuts-lvl3",
+          "type": "flat",
+          "parentId": "nuts"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-514-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Organisation Country Code",
+      "btId": "BT-514",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cac:Country/cbc:IdentificationCode",
+      "xpathRelative": "cac:Country/cbc:IdentificationCode",
+      "xsdSequenceOrder": [
+        {
+          "cac:Country": 28
+        },
+        {
+          "cbc:IdentificationCode": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-country",
+          "type": "flat",
+          "parentId": "country"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-507-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Country Subdivision",
+      "btId": "BT-507",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cbc:CountrySubentityCode",
+      "xpathRelative": "cbc:CountrySubentityCode",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CountrySubentityCode": 23
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "nuts-lvl3",
+          "type": "flat",
+          "parentId": "nuts"
+        },
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-514-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Country Code",
+      "btId": "BT-514",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cac:Country/cbc:IdentificationCode",
+      "xpathRelative": "cac:Country/cbc:IdentificationCode",
+      "xsdSequenceOrder": [
+        {
+          "cac:Country": 28
+        },
+        {
+          "cbc:IdentificationCode": 2
+        }
+      ],
+      "type": "code",
+      "legalType": "CODE",
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "codeList": {
+        "value": {
+          "id": "eforms-country",
+          "type": "flat",
+          "parentId": "country"
+        },
+        "severity": "ERROR"
+      }
+    }
+  ],
+  "textarea": [
+    {
+      "id": "BT-01(d)-Procedure",
+      "parentNodeId": "ND-LocalLegalBasisWithID",
+      "name": "Procedure Legal Basis (Description)",
+      "btId": "BT-01",
+      "xpathAbsolute": "/*/cac:TenderingTerms/cac:ProcurementLegislationDocumentReference[not(cbc:ID/text()=('CrossBorderLaw','LocalLegalBasis'))]/cbc:DocumentDescription",
+      "xpathRelative": "cbc:DocumentDescription",
+      "xsdSequenceOrder": [
+        {
+          "cbc:DocumentDescription": 15
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "CODE",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-21-Procedure",
+      "parentNodeId": "ND-ProcedureProcurementScope",
+      "name": "Title",
+      "btId": "BT-21",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cbc:Name",
+      "xpathRelative": "cbc:Name",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Name": 3
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-24-Procedure",
+      "parentNodeId": "ND-ProcedureProcurementScope",
+      "name": "Description",
+      "btId": "BT-24",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cbc:Description",
+      "xpathRelative": "cbc:Description",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Description": 4
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 6000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-5101(a)-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Street",
+      "btId": "BT-5101",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:StreetName",
+      "xpathRelative": "cbc:StreetName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:StreetName": 8
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-5101(b)-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Streetline 1",
+      "btId": "BT-5101",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:AdditionalStreetName",
+      "xpathRelative": "cbc:AdditionalStreetName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:AdditionalStreetName": 9
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-5101(c)-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Streetline 2",
+      "btId": "BT-5101",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cac:AddressLine/cbc:Line",
+      "xpathRelative": "cac:AddressLine/cbc:Line",
+      "xsdSequenceOrder": [
+        {
+          "cac:AddressLine": 27
+        },
+        {
+          "cbc:Line": 2
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-5131-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance City",
+      "btId": "BT-5131",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:CityName",
+      "xpathRelative": "cbc:CityName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CityName": 20
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-5121-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformance",
+      "name": "Place Performance Post Code",
+      "btId": "BT-5121",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cac:Address/cbc:PostalZone",
+      "xpathRelative": "cbc:PostalZone",
+      "xsdSequenceOrder": [
+        {
+          "cbc:PostalZone": 21
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-728-Procedure",
+      "parentNodeId": "ND-ProcedurePlacePerformanceAdditionalInformation",
+      "name": "Place Performance Additional Information",
+      "btId": "BT-728",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cac:RealizedLocation/cbc:Description",
+      "xpathRelative": "cbc:Description",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Description": 3
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 6000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "T01",
+              "T02",
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-300-Procedure",
+      "parentNodeId": "ND-ProcedureProcurementScope",
+      "name": "Additional Information",
+      "btId": "BT-300",
+      "xpathAbsolute": "/*/cac:ProcurementProject/cbc:Note",
+      "xpathRelative": "cbc:Note",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Note": 12
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 10000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-762-notice",
+      "parentNodeId": "ND-ChangeReason",
+      "name": "Change Reason Description",
+      "btId": "BT-762",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efac:ChangeReason/efbc:ReasonDescription",
+      "xpathRelative": "efbc:ReasonDescription",
+      "xsdSequenceOrder": [
+        {
+          "efbc:ReasonDescription": 2
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 6000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      }
+    },
+    {
+      "id": "BT-141(a)-notice",
+      "parentNodeId": "ND-Change",
+      "name": "Change Description",
+      "btId": "BT-141",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Changes/efac:Change/efbc:ChangeDescription",
+      "xpathRelative": "efbc:ChangeDescription",
+      "xsdSequenceOrder": [
+        {
+          "efbc:ChangeDescription": 1
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 6000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-500-Organization-Company",
+      "parentNodeId": "ND-Company",
+      "name": "Organisation Name",
+      "btId": "BT-500",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PartyName/cbc:Name",
+      "xpathRelative": "cac:PartyName/cbc:Name",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyName": 5
+        },
+        {
+          "cbc:Name": 2
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-16-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Organisation Part Name",
+      "btId": "BT-16",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:Department",
+      "xpathRelative": "cbc:Department",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Department": 15
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 1000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-510(a)-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Street",
+      "btId": "BT-510",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:StreetName",
+      "xpathRelative": "cbc:StreetName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:StreetName": 8
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-510(b)-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Streetline 1",
+      "btId": "BT-510",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:AdditionalStreetName",
+      "xpathRelative": "cbc:AdditionalStreetName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:AdditionalStreetName": 9
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-510(c)-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Streetline 2",
+      "btId": "BT-510",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cac:AddressLine/cbc:Line",
+      "xpathRelative": "cac:AddressLine/cbc:Line",
+      "xsdSequenceOrder": [
+        {
+          "cac:AddressLine": 27
+        },
+        {
+          "cbc:Line": 2
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-513-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Organisation City",
+      "btId": "BT-513",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:CityName",
+      "xpathRelative": "cbc:CityName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CityName": 20
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      },
+      "mandatory": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              "25",
+              "26",
+              "27",
+              "28",
+              "29",
+              "30",
+              "31",
+              "32",
+              "33",
+              "34",
+              "35",
+              "36",
+              "37",
+              "38",
+              "39",
+              "40",
+              "CEI",
+              "T01",
+              "T02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-512-Organization-Company",
+      "parentNodeId": "ND-CompanyAddress",
+      "name": "Organisation Post Code",
+      "btId": "BT-512",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:PostalAddress/cbc:PostalZone",
+      "xpathRelative": "cbc:PostalZone",
+      "xsdSequenceOrder": [
+        {
+          "cbc:PostalZone": 21
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-502-Organization-Company",
+      "parentNodeId": "ND-CompanyContact",
+      "name": "Organisation Contact Point",
+      "btId": "BT-502",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:Company/cac:Contact/cbc:Name",
+      "xpathRelative": "cbc:Name",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Name": 3
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-500-Organization-TouchPoint",
+      "parentNodeId": "ND-Touchpoint",
+      "name": "Name",
+      "btId": "BT-500",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PartyName/cbc:Name",
+      "xpathRelative": "cac:PartyName/cbc:Name",
+      "xsdSequenceOrder": [
+        {
+          "cac:PartyName": 4
+        },
+        {
+          "cbc:Name": 2
+        }
+      ],
+      "type": "text-multilingual",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-16-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Part Name",
+      "btId": "BT-16",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cbc:Department",
+      "xpathRelative": "cbc:Department",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Department": 15
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 1000,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-510(a)-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Street",
+      "btId": "BT-510",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cbc:StreetName",
+      "xpathRelative": "cbc:StreetName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:StreetName": 8
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-510(b)-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Streetline 1",
+      "btId": "BT-510",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cbc:AdditionalStreetName",
+      "xpathRelative": "cbc:AdditionalStreetName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:AdditionalStreetName": 9
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-510(c)-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Streetline 2",
+      "btId": "BT-510",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cac:AddressLine/cbc:Line",
+      "xpathRelative": "cac:AddressLine/cbc:Line",
+      "xsdSequenceOrder": [
+        {
+          "cac:AddressLine": 27
+        },
+        {
+          "cbc:Line": 2
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-513-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "City",
+      "btId": "BT-513",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cbc:CityName",
+      "xpathRelative": "cbc:CityName",
+      "xsdSequenceOrder": [
+        {
+          "cbc:CityName": 20
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-512-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointAddress",
+      "name": "Post Code",
+      "btId": "BT-512",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:PostalAddress/cbc:PostalZone",
+      "xpathRelative": "cbc:PostalZone",
+      "xsdSequenceOrder": [
+        {
+          "cbc:PostalZone": 21
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    },
+    {
+      "id": "BT-502-Organization-TouchPoint",
+      "parentNodeId": "ND-TouchpointContact",
+      "name": "Contact Point",
+      "btId": "BT-502",
+      "xpathAbsolute": "/*/ext:UBLExtensions/ext:UBLExtension/ext:ExtensionContent/efext:EformsExtension/efac:Organizations/efac:Organization/efac:TouchPoint/cac:Contact/cbc:Name",
+      "xpathRelative": "cbc:Name",
+      "xsdSequenceOrder": [
+        {
+          "cbc:Name": 3
+        }
+      ],
+      "type": "text",
+      "legalType": "TEXT",
+      "maxLength": 400,
+      "repeatable": {
+        "value": false,
+        "severity": "ERROR"
+      },
+      "forbidden": {
+        "value": false,
+        "severity": "ERROR",
+        "constraints": [
+          {
+            "noticeTypes": [
+              "X01",
+              "X02"
+            ],
+            "value": true,
+            "severity": "ERROR"
+          }
+        ]
+      }
+    }
+  ]
+}

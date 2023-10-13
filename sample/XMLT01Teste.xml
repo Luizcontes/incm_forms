@@ -254,12 +254,12 @@ efbc > eForms specific extension basic components
   <!-- 02 -> General info about the form!!! -->
   <cbc:UBLVersionID>2.3</cbc:UBLVersionID>  <!-- nota: os valores destes parametros copiei de um xml gerado no eform -->
   <cbc:CustomizationID>eforms-sdk-1.8</cbc:CustomizationID>
-  <cbc:ID schemeName="notice-id"></cbc:ID>  <!-- Preenchido automaticamente-->  <!-- Como vai ser gerado este ID? -->
+  <cbc:ID schemeName="notice-id"></cbc:ID>
   <cbc:IssueDate></cbc:IssueDate>  <!-- Preenchido automaticamente-->  <!-- Data e hora que o formulário é submetido -->
   <cbc:IssueTime></cbc:IssueTime>  <!-- Preenchido automaticamente-->
   <cbc:VersionID>02</cbc:VersionID>
   <!-- Dispatch Date -->
-  <cbc:RequestedPublicationDate>2023-08-27+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
+  <cbc:RequestedPublicationDate>2023-09-16+01:00</cbc:RequestedPublicationDate>  <!-- O que será este RequestedPublicationDate -->
 
   <!-- Procedure > Purpose > Legal basis -->
   <cbc:RegulatoryDomain>32007R1370</cbc:RegulatoryDomain>
@@ -348,7 +348,7 @@ efbc > eForms specific extension basic components
     <cbc:ID>RA/DAF/SERV-96/18</cbc:ID>
     <cbc:Name languageID="POR">Public road transport services</cbc:Name>
     <cbc:ProcurementTypeCode listName="contract-nature">supplies</cbc:ProcurementTypeCode>
-    <cbc:Note languageID="POR">Some additional information on the procurement ... blablabla</cbc:Note>
+    <cbc:Note languageID='POR'>Some additional information on the procurement ... blablabla</cbc:Note>
 
     <cac:ProcurementAdditionalType>
       <cbc:ProcurementTypeCode listName="transport-service">other</cbc:ProcurementTypeCode>
@@ -416,10 +416,10 @@ efbc > eForms specific extension basic components
         </cac:Address>
       </cac:RealizedLocation>
       <cac:PlannedPeriod>
-        <!-- <cbc:StartDate>2023-08-18+01:00</cbc:StartDate> -->
+        <cbc:StartDate>2023-08-18+01:00</cbc:StartDate>
         <!-- <cbc:EndDate>2023-08-19+01:00</cbc:EndDate> -->
-        <!-- <cbc:DurationMeasure unitCode="MONTH">60</cbc:DurationMeasure>  -->
-        <cbc:DescriptionCode listName="timeperiod">UNKNOWN</cbc:DescriptionCode>
+        <!-- <cbc:DurationMeasure unitCode="MONTH"></cbc:DurationMeasure>  -->
+        <!-- <cbc:DescriptionCode listName="timeperiod"></cbc:DescriptionCode> -->
       </cac:PlannedPeriod>
     </cac:ProcurementProject>
   </cac:ProcurementProjectLot>
